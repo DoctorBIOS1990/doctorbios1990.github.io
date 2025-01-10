@@ -369,6 +369,11 @@ button:hover {
     border-top: 2px solid rgba(250, 250, 250, 0.1);
 }
 
+.expLine .right-text p{
+    border: white 1px solid;
+    padding: 10px;
+}
+
 .left-image img,
 .right-image img {
     border-radius: 5px;

@@ -423,11 +423,16 @@ button:hover {
 }
 
 .service-item:hover h4 {
-    color: #1e1e1e;
+    color: black;
 }
 
-.service-item:hover p {
-    color: #4a4a4a;
+.service-item:hover p, .service-item:hover td {
+    color: black;
+    font-weight: bold;
+}
+
+.service-item td:nth-child(1){
+    padding-right:10px;
 }
 
 .service-item .service-icon {
@@ -797,6 +802,7 @@ section.contact-me {
     .responsive-nav {
         display: inline-block;
     }
+
     .section {
         width: 94%;
         right: 3%;

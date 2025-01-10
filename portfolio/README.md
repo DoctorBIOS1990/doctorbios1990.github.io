@@ -1,3 +1,3 @@
 # Personal Portfolio
 
-<img src="assets/images/thumb.webp">
+<img src="https://github.com/DoctorBIOS1990/doctorbios1990.github.io/blob/main/portfolio/assets/images/Thumb.webp">

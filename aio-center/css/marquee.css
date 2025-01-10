@@ -1,0 +1,30 @@
+/* MARQUEE */
+marquee {
+    position: relative; 
+    padding: 10px; 
+}
+
+marquee::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%; 
+    height: 100%;
+    background: linear-gradient(to left, transparent, rgb(235,235,235)); 
+    z-index: 1;
+}
+
+marquee::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%; 
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgb(235,235,235)); 
+}
+
+.imgMarquee {
+    max-width: 100%;
+}

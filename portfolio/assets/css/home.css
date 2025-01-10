@@ -1,0 +1,157 @@
+#firstSection{
+    padding: 120px 1% 10px;
+}
+
+a {
+    color:#af60f3;
+    font-weight: bold;
+    transition: all .45s ease;
+}
+
+a:Hover {
+    color:rgb(181,0,253);
+    font-weight: bold;
+}
+
+.slide{
+    margin-bottom: 20px;
+}
+
+.typer{
+    color:#8011e0;
+    font-size: smaller;
+}
+
+.uno{
+    display: inline-block;
+    margin-right: 15px;
+    height: 32px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: #8011e0;
+    color: #fff !important;
+}
+
+.dos{
+    display: inline-block;
+    color: #ccc !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top:10px;
+}
+
+.home-text h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color:#fff !important;
+    line-height: 1.1;
+    margin: 0 0 8px ;
+}
+
+.home-text h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color:#fff !important;
+    line-height: 1.1;
+    margin: 0 0 35px ;
+}
+
+.home-text p{
+    font-size: 1.1rem;
+    color:#fff !important;
+    line-height: 1.8;
+    margin-bottom:30px ;
+    width: 97%;
+    justify-content: flex-start;
+    text-align: justify;
+}
+
+.button{
+    Text-decoration:None !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #8011e0;
+
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all .45s ease;
+    color: #fff !important;
+    margin-top: 30px;
+    margin: 10px 10px;
+}
+
+.btn:nth-child(2){
+    background: none;
+    border: #8011e0 2px solid;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+#proyect{
+    color:black;
+}
+
+.expLine{
+    border-left: #ccc 2px solid;
+}
+
+.expLine .left-image-post .right-text p, .expLine .left-image-post .right-text h4:nth-child(2){
+    margin-left:40px;
+}
+
+.title{
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left:3px;
+}
+
+#arrowUp i{
+    margin-left: 2px;
+}
+
+#arrowDown i{
+    margin-left: -2px;
+    position: absolute;
+}
+
+/*-- FOOTER--*/
+
+.scrollup{
+	width:40px;
+	height:40px;			
+	position:fixed;
+	bottom:40px;
+	right:8px;
+    font-size: 36px;
+    color:white !important;
+    display:none;	
+    transition: all .45s ease;
+    -webkit-filter: drop-shadow(0px 0px 3px black);
+    filter: drop-shadow(0px 0px 3px black);
+}
+
+.scrollup:hover{
+    cursor:pointer;
+}
+
+#Exp{
+   filter:grayscale();
+   transition: all .45s ease;
+}
+
+#Exp:hover{
+    filter:none;
+ }

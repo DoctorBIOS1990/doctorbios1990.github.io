@@ -1,0 +1,30 @@
+iframe{
+    border-radius:10px;
+    width:400px; 
+    height:300px;
+    object-fit: contain;
+}
+
+.myGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+    align-items: center;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+}
+
+.myGrid .item {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.myGrid .item img {
+    width: 100%;
+    transition: .5s;
+}
+
+.myGrid .item:hover img {
+    filter:sepia(50%);
+}

@@ -417,6 +417,7 @@ button:hover {
 
 .service-item h4 {
     transition: all 0.5s;
+    text-align: center;
 }
 
 .service-item p {
@@ -431,13 +432,9 @@ button:hover {
     color: black;
 }
 
-.service-item:hover p, .service-item:hover td {
+.service-item:hover p {
     color: black;
     font-weight: bold;
-}
-
-.service-item td:nth-child(1){
-    padding-right:10px;
 }
 
 .service-item .service-icon {
@@ -452,6 +449,7 @@ button:hover {
 
 .service-item .first-service-icon {
     background-image: url(../images/first-white-icon.png);
+    margin-left:39%;
 }
 
 .service-item:hover .first-service-icon {
@@ -460,6 +458,7 @@ button:hover {
 
 .service-item .second-service-icon {
     background-image: url(../images/second-white-icon.png);
+    margin-left:39%;
 }
 
 .service-item:hover .second-service-icon {
@@ -468,6 +467,7 @@ button:hover {
 
 .service-item .third-service-icon {
     background-image: url(../images/third-white-icon.png);
+    margin-left:39%;
 }
 
 .service-item:hover .third-service-icon {
@@ -476,12 +476,12 @@ button:hover {
 
 .service-item .fourth-service-icon {
     background-image: url(../images/fourth-white-icon.png);
+    margin-left:39%;
 }
 
 .service-item:hover .fourth-service-icon {
     background-image: url(../images/fourth-main-icon.png);
 }
-
 
 /* My Work */
 

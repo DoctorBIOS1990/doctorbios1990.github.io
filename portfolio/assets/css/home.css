@@ -155,3 +155,18 @@ a:Hover {
 #Exp:hover{
     filter:none;
  }
+
+ .pictureSchool i{
+    margin-top: 10px;
+    border-radius: 5px;
+    color:white;
+    padding: 10px;
+    background:#8011e0;
+    font-size: 24px;
+    transition: all .45s ease;
+ }
+ 
+ .pictureSchool i:hover{
+    background:white;
+    color: #8011e0;
+ }

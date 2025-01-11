@@ -39,6 +39,7 @@
 
   <body>
     <div id="page-wraper">
+
       <!-- Sidebar Menu -->
       <div class="responsive-nav">
         <i class="fa fa-bars" id="menu-toggle"></i>
@@ -83,7 +84,9 @@
           </div>
         </div>
       </div>
+      <!-- End Sidebar Menu -->
 
+      <!-- Home-->
       <section class="section" id="firstSection" data-section="section0">
         <div class="container">
 
@@ -123,9 +126,9 @@
         </div>
 
       </section>
+      <!-- End Home-->
 
-
-<!-- ACERCA DE -->      
+      <!-- About Me-->    
       <section class="section about-me" data-section="section1">
         <div class="container">
           <div class="section-heading">
@@ -157,8 +160,9 @@
           </div>
          </div>
       </section>
+      <!-- End About Me-->
 
-  <!--- EDUCACION-->
+      <!-- Education-->
       <section class="section about-me" data-section="section4" id="experiencia">
         <div class="container" >
           <div class="section-heading">
@@ -251,9 +255,9 @@
 
         </div>
       </section>
-<!--- END EDUCACION-->
+<!-- End Education-->
 
- <!--- EXPERIENCIA-->
+ <!-- Experience -->
  <section class="section about-me" data-section="section5">
   <div class="container">
     <div class="section-heading">
@@ -342,9 +346,9 @@
 
   </div>
 </section>
-<!--- END EXPERIENCIA-->
+<!-- End Experience-->
 
-  <!--- HABILIDADES-->
+  <!-- Skills -->
       <section class="section my-services" data-section="section2">
         <div class="container">
           <div class="section-heading">
@@ -429,7 +433,9 @@
           </div>
         </div>
       </section>
+      <!-- End Skills -->
 
+      <!-- Mys projects -->
       <section class="section my-work" data-section="section3">
         <div class="container">
           <div class="section-heading">
@@ -756,7 +762,7 @@
                       </figure>
                   </div>
                 <!--End Web Example--> 
-              </div> <!--END ISOTOPE-BOX-->
+              </div>
             </div>
           </div>
         </div>
@@ -767,15 +773,15 @@
             <p><img src="assets/images/Star Cuba.webp" alt="Bandera Cuba" style="width:24px;"> Cuba</p>
         </div>
       </section>
+      <!-- End Mys projects -->
     </div>
 
+    <!-- Float scroll -->
     <a href="#" class="scrollup"><i class="fa fa-chevron-circle-up"></i></a>
 
     <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/lightbox.js"></script>
@@ -783,56 +789,7 @@
     <script src="assets/js/moment.js"></script>
     <script src="assets/js/all.js"></script>
     <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/script.js"></script>
 
-    <script>
-      //according to loftblog tut
-      $(".main-menu li:first").addClass("active");
-
-      var showSection = function showSection(section, isAnimate) {
-        var direction = section.replace(/#/, ""),
-          reqSection = $(".section").filter(
-            '[data-section="' + direction + '"]'
-          ),
-          reqSectionPos = reqSection.offset().top - 0;
-
-        if (isAnimate) {
-          $("body, html").animate(
-            {
-              scrollTop: reqSectionPos
-            },
-            800
-          );
-        } else {
-          $("body, html").scrollTop(reqSectionPos);
-        }
-      };
-
-      var checkSection = function checkSection() {
-        $(".section").each(function() {
-          var $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-          if (topEdge < wScroll && bottomEdge > wScroll) {
-            var currentId = $this.data("section"),
-              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-            reqLink
-              .closest("li")
-              .addClass("active")
-              .siblings()
-              .removeClass("active");
-          }
-        });
-      };
-
-      $(".main-menu").on("click", "a", function(e) {
-        e.preventDefault();
-        showSection($(this).attr("href"), true);
-      });
-
-      $(window).scroll(function() {
-        checkSection();
-      });
-    </script>
   </body>
 </html>

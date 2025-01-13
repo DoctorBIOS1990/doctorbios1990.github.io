@@ -2,10 +2,8 @@
 
 #page-wraper {
     background: url(../images/page-bg.webp) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
+    background-position: center;
     width:100%;
     height:100%;
 }
@@ -13,7 +11,7 @@
 /* Basic */
 
 body {
-    background-color: black;
+    background-color: rgb(32,0,40);
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
 }
@@ -296,7 +294,10 @@ html {
 
 .section-closing {
     text-align: center;
+}
 
+.section-closing p {
+    margin-bottom: 0;
 }
 
 .section-heading h2, .section-closing h2 {
@@ -584,7 +585,7 @@ figure.snip1321 figcaption {
   z-index: 1;
 }
 figure.snip1321 h4 {
-    margin-top: 15px;
+  margin-top: 15px;
   margin-bottom: 5px;
   color: #232323;
 }

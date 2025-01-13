@@ -74,3 +74,5 @@
     wrapAround: true
   });
 })(jQuery);
+
+$isotope.isotope({ filter: '*' });

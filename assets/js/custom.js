@@ -75,4 +75,3 @@
   });
 })(jQuery);
 
-$isotope.isotope({ filter: '*' });

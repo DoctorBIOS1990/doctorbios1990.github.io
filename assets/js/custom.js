@@ -22,6 +22,14 @@
     });
   });
 
+ //Menu nav autoclose
+  document.onscroll = () =>{
+    menu.classList.remove("open");
+    sections.forEach(function(section) {
+      section.style.opacity = "100%";
+    });
+}
+
   // Close menu after click on smaller screens
   $(window).on("resize", function() {
     if ($(window).width() < 846) {

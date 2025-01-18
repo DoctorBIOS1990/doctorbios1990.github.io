@@ -2,17 +2,24 @@
   var toggle = document.getElementById("menu-toggle");
   var menu = document.getElementById("menu");
   var close = document.getElementById("menu-close");
+  var sections = document.querySelectorAll("section");
 
   toggle.addEventListener("click", function(e) {
     if (menu.classList.contains("open")) {
-      menu.classList.remove("open");
+        menu.classList.remove("open");
     } else {
       menu.classList.add("open");
-    }
+      sections.forEach(function(section) {
+        section.style.opacity = "20%";
+      });
+    };
   });
 
   close.addEventListener("click", function(e) {
     menu.classList.remove("open");
+    sections.forEach(function(section) {
+      section.style.opacity = "100%";
+    });
   });
 
   // Close menu after click on smaller screens

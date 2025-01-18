@@ -45,7 +45,6 @@
 
 		toggleButton.on('click', function(event){
 			event.preventDefault();
-
 			toggleButton.toggleClass('is-clicked');
 			nav.slideToggle();
 		});
@@ -61,7 +60,7 @@
 
 			if (nav.hasClass('mobile')) {   		
 				toggleButton.toggleClass('is-clicked'); 
-				nav.slideToggle();   		
+				nav.slideToggle();
 			}     
 		});
 

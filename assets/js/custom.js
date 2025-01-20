@@ -4,6 +4,7 @@
   var close = document.getElementById("menu-close");
   var sections = document.querySelectorAll("section");
 
+  // Open Menu Mobile
   toggle.addEventListener("click", function(e) {
     if (menu.classList.contains("open")) {
         menu.classList.remove("open");
@@ -14,21 +15,20 @@
       });
     };
   });
+ 
+  // Close Menu Mobile
+  const closeNav = () => {
+      menu.classList.remove("open");
+      sections.forEach(function(section) {
+        section.style.opacity = "100%";
+      });
+  }
 
-  close.addEventListener("click", function(e) {
-    menu.classList.remove("open");
-    sections.forEach(function(section) {
-      section.style.opacity = "100%";
-    });
-  });
+   // Close menu on click
+   close.addEventListener("click", function (e) {closeNav(); });
 
- //Menu nav autoclose
-  document.onscroll = () =>{
-    menu.classList.remove("open");
-    sections.forEach(function(section) {
-      section.style.opacity = "100%";
-    });
-}
+  // Close menu on scroll
+  document.onscroll = () => closeNav();
 
   // Close menu after click on smaller screens
   $(window).on("resize", function() {

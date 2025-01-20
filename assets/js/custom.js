@@ -9,8 +9,9 @@
     if (menu.classList.contains("open")) {
         menu.classList.remove("open");
     } else {
-      menu.classList.add("open");
-      sections.forEach(function(section) {
+        menu.classList.add("open");
+        sections.forEach(function(section) {
+        toggle.style.opacity = "0%";
         section.style.opacity = "20%";
       });
     };
@@ -20,7 +21,8 @@
   const closeNav = () => {
       menu.classList.remove("open");
       sections.forEach(function(section) {
-        section.style.opacity = "100%";
+      toggle.style.opacity = "100%";
+      section.style.opacity = "100%";
       });
   }
 

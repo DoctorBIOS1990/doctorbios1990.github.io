@@ -2526,10 +2526,18 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 #download .download-badges li a.badge-inoel {
   background-image: url("../images/inoel.png");
+  border: #ccc solid 2px;
+  border-radius:8px;
+  -webkit-filter: drop-shadow(0px 0px 10px #202020);
+  filter: drop-shadow(0px 0px 10px #202020);
 }
 
 #download .download-badges li a.badge-osmanys {
   background-image: url("../images/osmanys.png");
+  border: #ccc solid 2px;
+  border-radius:8px;
+  -webkit-filter: drop-shadow(0px 0px 10px #202020);
+  filter: drop-shadow(0px 0px 10px #202020);
 }
 
 

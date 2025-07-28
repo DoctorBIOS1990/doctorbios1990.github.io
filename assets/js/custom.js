@@ -32,10 +32,8 @@
   // Close Event Menu Mobile on click
   close.addEventListener("click", function (e) {closeNav(); });
 
-  // Close Menu Mobiule of mouse leave 
-  $("#menu").mouseleave(function() {
-      closeNav();
-  });
+  // Close Menu Mobile on scroll
+  document.onscroll = () => closeNav();
 
   // Close menu after click on smaller screens
   $(window).on("resize", function() {
@@ -95,7 +93,6 @@
     resizeDuration: 200,
     wrapAround: true
   });
-
 
 })(jQuery);
 

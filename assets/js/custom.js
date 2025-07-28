@@ -5,18 +5,18 @@
   var sections = document.querySelectorAll("section");
 
   // Open Menu Mobile
-  toggle.addEventListener("click", function(e) {
+  openMenu = () => {
     if (menu.classList.contains("open")) {
-        menu.classList.remove("open");
-    } else {
-        menu.classList.add("open");
-        sections.forEach(function(section) {
-        toggle.style.opacity = "0%";
-        section.style.opacity = "20%";
-      });
-    };
-  });
- 
+          menu.classList.remove("open");
+      } else {
+          menu.classList.add("open");
+          sections.forEach(function(section) {
+          toggle.style.opacity = "0%";
+          section.style.opacity = "20%";
+        });
+      };
+  }
+
   // Close Menu Mobile
   const closeNav = () => {
       menu.classList.remove("open");
@@ -26,11 +26,16 @@
       });
   }
 
-   // Close menu on click
-   close.addEventListener("click", function (e) {closeNav(); });
+  // Open Event Menu Mobile on click
+  toggle.addEventListener("click", function(e) { openMenu(); });
 
-  // Close menu on scroll
-  document.onscroll = () => closeNav();
+  // Close Event Menu Mobile on click
+  close.addEventListener("click", function (e) {closeNav(); });
+
+  // Close Menu Mobiule of mouse leave 
+  $("#menu").mouseleave(function() {
+      closeNav();
+  });
 
   // Close menu after click on smaller screens
   $(window).on("resize", function() {
@@ -90,5 +95,11 @@
     resizeDuration: 200,
     wrapAround: true
   });
+
+
 })(jQuery);
+
+
+
+
 

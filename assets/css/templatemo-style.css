@@ -1,4 +1,18 @@
+@font-face
+{
+    font-family: "MontSerrat";
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: "MontSerrat", Tahoma;
+    /*scroll-behavior: smooth !important;*/
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
 
 #page-wraper {
     background: url(../images/page-bg.webp) no-repeat center center fixed;
@@ -836,4 +850,16 @@ section.contact-me {
 .icon-proyect{
     color:black;
     margin:0;
+}
+
+@media (width < 448px) {
+    .button .btn {
+        font-size: 88%;
+    }
+}
+
+@media (width < 424px) {
+    .button .btn {
+        font-size: 80%;
+    }
 }

@@ -87,13 +87,17 @@
 
     $(this).on("change", filter);
     filter();
+
+    $(document).ready(function() {
+      filter('*')
+    });
   });
 
+  /*
   lightbox.option({
     resizeDuration: 200,
     wrapAround: true
-  });
-
+  });*/
 })(jQuery);
 
 

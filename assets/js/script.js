@@ -83,7 +83,6 @@ const links = [
 links.forEach(([element, url]) => {
   if (element) {
     element.addEventListener('click', () => {
-      //window.location.href = url;
       window.open(url, '_blank');
     });
   }

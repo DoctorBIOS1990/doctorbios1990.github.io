@@ -66,3 +66,25 @@ function type(){
     setTimeout(type, 80);
 }
 type();
+
+// Redirect Social Links
+const telegram = document.getElementById('telegram');
+const linkedin = document.getElementById('linkedin');
+const github = document.getElementById('github');
+const mail = document.getElementById('mail');
+
+const links = [
+  [telegram, 'https://t.me/doctorbios'],
+  [linkedin, 'https://www.linkedin.com/in/jorge-benito-ug%C3%A1s'],
+  [github, 'https://github.com/doctorbios1990'],
+  [mail, 'mailto:jorgebenitougas@gmail.com'],
+];
+
+links.forEach(([element, url]) => {
+  if (element) {
+    element.addEventListener('click', () => {
+      //window.location.href = url;
+      window.open(url, '_blank');
+    });
+  }
+});

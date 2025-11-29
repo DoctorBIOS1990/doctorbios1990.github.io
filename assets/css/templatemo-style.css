@@ -5,14 +5,18 @@
     font-weight: normal;
     font-style: normal;
 }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
-* {
-    font-family: "MontSerrat", Tahoma;
-    /*scroll-behavior: smooth !important;*/
+html{
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%;
 }
-
-/*import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");*/
-
+*{
+    font-family: "MontSerrat", Tahoma;
+    font-optical-sizing: auto;
+    font-display: swap;
+    scroll-behavior: smooth;
+}
 
 #page-wraper {
     background: url(../images/page-bg.webp) no-repeat center center fixed;
@@ -340,8 +344,9 @@ html {
 .white-button a {
     display: inline-block;
     padding: 12px 20px;
-    background-color: #fff;
-    color: rgb(181,0,253);
+    color: #fff;
+    background-color: #661a83;
+    
     font-size: 13px;
     font-weight: 800;
     letter-spacing: 0.5px;
@@ -350,8 +355,8 @@ html {
 }
 
 .white-button a:hover {
-    background-color: rgb(181,0,253);
-    color: #fff;
+    background-color: #fff;
+    color: #661a83;
 }
 
 button {
@@ -463,39 +468,39 @@ button:hover {
 }
 
 .service-item .first-service-icon {
-    background-image: url(../images/first-white-icon.png);
+    background-image: url(../images/first-white-icon.webp);
     margin-left:39%;
 }
 
 .service-item:hover .first-service-icon {
-    background-image: url(../images/first-main-icon.png);
+    background-image: url(../images/first-main-icon.webp);
 }
 
 .service-item .second-service-icon {
-    background-image: url(../images/second-white-icon.png);
+    background-image: url(../images/second-white-icon.webp);
     margin-left:39%;
 }
 
 .service-item:hover .second-service-icon {
-    background-image: url(../images/second-main-icon.png);
+    background-image: url(../images/second-main-icon.webp);
 }
 
 .service-item .third-service-icon {
-    background-image: url(../images/third-white-icon.png);
+    background-image: url(../images/third-white-icon.webp);
     margin-left:39%;
 }
 
 .service-item:hover .third-service-icon {
-    background-image: url(../images/third-main-icon.png);
+    background-image: url(../images/third-main-icon.webp);
 }
 
 .service-item .fourth-service-icon {
-    background-image: url(../images/fourth-white-icon.png);
+    background-image: url(../images/fourth-white-icon.webp);
     margin-left:39%;
 }
 
 .service-item:hover .fourth-service-icon {
-    background-image: url(../images/fourth-main-icon.png);
+    background-image: url(../images/fourth-main-icon.webp);
 }
 
 /* My Work */
@@ -528,8 +533,8 @@ section.my-work .section-heading {
 }
 
 .isotope-toolbar input[type="radio"]:checked + span {
-    color: rgb(181,0,253);
-    border-bottom: 2px solid rgb(181,0,253);
+    color: #b500fd;
+    border-bottom: 2px solid #b500fd;
 }
 
 .isotope-box {
@@ -850,16 +855,4 @@ section.contact-me {
 .icon-proyect{
     color:black;
     margin:0;
-}
-
-@media (width < 448px) {
-    .button .btn {
-        font-size: 88%;
-    }
-}
-
-@media (width < 424px) {
-    .button .btn {
-        font-size: 80%;
-    }
 }

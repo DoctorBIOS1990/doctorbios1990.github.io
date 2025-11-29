@@ -8,8 +8,8 @@ a {
     transition: all .45s ease;
 }
 
-a:Hover {
-    color:rgb(181,0,253);
+a:hover {
+    color:#b500fd;
     font-weight: bold;
 }
 
@@ -17,8 +17,8 @@ a:Hover {
     margin-bottom: 20px;
 }
 
-.typer{
-    color:#8011e0;
+.skills-services{
+    color:#661a83;
     font-size: smaller;
 }
 
@@ -31,13 +31,13 @@ a:Hover {
     font-size: 20px;
     font-weight: 500;
     border-radius: 5px;
-    background: #8011e0;
-    color: #fff !important;
+    background: #661a83;
+    color: #fff;
 }
 
 .dos{
     display: inline-block;
-    color: #ccc !important;
+    color: #ccc;
     font-size: 20px;
     font-weight: 500;
     padding-top:10px;
@@ -46,7 +46,7 @@ a:Hover {
 .home-text h1{
     font-size: 4rem;
     font-weight: 700;
-    color:#fff !important;
+    color:#fff;
     line-height: 1.1;
     margin: 0 0 8px ;
 }
@@ -54,14 +54,14 @@ a:Hover {
 .home-text h3{
     font-size: 1.8rem;
     font-weight: 700;
-    color:#fff !important;
+    color:#fff;
     line-height: 1.1;
     margin: 0 0 35px ;
 }
 
 .home-text p{
     font-size: 1.1rem;
-    color:#fff !important;
+    color:#fff;
     line-height: 1.8;
     margin-bottom:30px ;
     width: 97%;
@@ -69,7 +69,7 @@ a:Hover {
 }
 
 .button{
-    Text-decoration:None !important;
+    text-decoration: none;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -78,25 +78,32 @@ a:Hover {
 .btn{
     display: inline-block;
     padding: 12px 28px;
-    background: #8011e0;
+    background: #661a83;
     font-size: 1rem;
     letter-spacing: 1px;
     font-weight: 600;
     transition: all .45s ease;
-    color: #fff !important;
+    color: #fff;
     margin-top: 30px;
     margin: 10px 10px;
-    border: #8011e0 2px solid;
+    border: #7e21a3 2px solid;
 }
-
+.btn:nth-child(1):hover{
+    color: #fff;
+    background: #4f1465;
+    cursor: pointer;
+}
 .btn:nth-child(2){
+    color: #fff;
     background: none;
-    border: #8011e0 2px solid;
+    border: #661a83 2px solid;
     transition: all .45s ease;
 }
-
-.btn:hover{
-    cursor: pointer;
+.btn:nth-child(2):hover{
+    color: #fff;
+    background: none;
+    border: #ccc 2px solid;
+    transition: all .45s ease;
 }
 
 #proyect{
@@ -161,12 +168,21 @@ a:Hover {
     border-radius: 5px;
     color:white;
     padding: 10px;
-    background:#8011e0;
+    background:#661a83;
     font-size: 24px;
     transition: all .45s ease;
  }
  
  .pictureSchool i:hover{
     background:white;
-    color: #8011e0;
+    color: #661a83;
+ }
+
+ @media(width < 494px){
+    .home-text h1{
+        font-size: 3rem;
+    }
+    .home-text h3{
+        font-size: 1.5rem;
+    }
  }

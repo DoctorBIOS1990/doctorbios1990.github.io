@@ -46,3 +46,23 @@ $(".main-menu").on("click", "a", function(e) {
 $(window).scroll(function() {
   checkSection();
 });
+
+
+// Typewriter
+const words = ["Backend Developer.","Web Developer.", "App Developer."];
+const text = document.querySelector('.skills-services');
+
+i = 0, j = 0, del = false;
+
+function type(){
+    text.textContent = words[i].slice(0, del ? --j : ++j);
+
+    if (!del && j == words[i].length){
+        return setTimeout(()=> del = true, 300, type());
+    }
+    if (del && j == 0){
+        del = false, i = (i + 1) % words.length;
+    }
+    setTimeout(type, 80);
+}
+type();

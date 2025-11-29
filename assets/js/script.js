@@ -55,7 +55,7 @@ const text = document.querySelector('.skills-services');
 i = 0, j = 0, del = false;
 
 function type(){
-    text.textContent = words[i].slice(0, del ? --j : ++j);
+    text.textContent = words[i].slice(0, del ? --j : ++j) + ' | ';
 
     if (!del && j == words[i].length){
         return setTimeout(()=> del = true, 300, type());

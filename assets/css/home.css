@@ -186,3 +186,49 @@ a:hover {
         font-size: 1.5rem;
     }
  }
+ @media(width < 491px){
+    .home-text h1{
+        font-size: 3rem;
+    }
+    .home-text h2{
+        font-size: 1.5rem;
+    }
+ }
+ @media(width < 447px){
+    .btn{
+        font-size: 0.9rem;
+    }
+ }
+ @media(width < 426px){
+    .btn{
+        font-size: 0.8rem;
+    }
+ }
+ @media(width < 405px){
+    .btn{
+        font-size: 0.7rem;
+    }
+ }
+ @media(width < 385px){
+    .home-text h1{
+        font-size: 2.9rem;
+    }
+    .home-text h2{
+        font-size: 1.4rem;
+    }
+    .btn{
+        font-size: 0.6rem;
+    }
+ }
+ @media(width < 371px){
+    .home-text h1{
+        font-size: 2.8rem;
+    }
+ }
+
+ @media(width < 365px){
+    .home-text h2{
+        font-size: 1.3rem;
+    }
+ }
+

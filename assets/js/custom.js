@@ -3,7 +3,8 @@
   var menu = document.getElementById("menu");
   var close = document.getElementById("menu-close");
   var sections = document.querySelectorAll(".section");
- 
+  var links = document.querySelectorAll(".main-menu li a");
+  
   // Open Menu Mobile
   openMenu = () => {
     if (menu.classList.contains("open")) {
@@ -30,12 +31,20 @@
   // Close Event Menu Mobile on click
   close.addEventListener("click", function (e) {closeNav(); });
 
+  // Close Menu Mobile on click on the section
   sections.forEach((sections) => {
     sections.addEventListener("click", () => {
       closeNav(); 
     });
   }); 
 
+    // Close Menu Mobile on click link in the menu
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      closeNav(); 
+    });
+  }); 
+  
   // Close menu after click on smaller screens
   $(window).on("resize", function() {
     if ($(window).width() < 846) {

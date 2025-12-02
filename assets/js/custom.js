@@ -2,7 +2,7 @@
   var toggle = document.getElementById("menu-toggle");
   var menu = document.getElementById("menu");
   var close = document.getElementById("menu-close");
-  var sections = document.querySelectorAll("section");
+  var sections = document.querySelectorAll(".section");
 
   // Open Menu Mobile
   openMenu = () => {
@@ -11,8 +11,8 @@
       } else {
           menu.classList.add("open");
           sections.forEach(function(section) {
-          toggle.style.opacity = "0%";
-          section.style.opacity = "20%";
+              toggle.style.opacity = "0%";
+              section.style.filter = "blur(10px)";
         });
       };
   }
@@ -21,20 +21,23 @@
   const closeNav = () => {
       menu.classList.remove("open");
       sections.forEach(function(section) {
-      toggle.style.opacity = "100%";
-      section.style.opacity = "100%";
+          toggle.style.opacity = "100%";
+          section.style.filter = "";
       });
   }
 
-  // Open Event Menu Mobile on click
+  // Open Event Menu Mobile on button menu click
   toggle.addEventListener("click", function(e) { openMenu(); });
 
   // Close Event Menu Mobile on click
   close.addEventListener("click", function (e) {closeNav(); });
 
-  // Close Menu Mobile on scroll
-  document.onscroll = () => closeNav();
-
+  sections.forEach((sections) => {
+    sections.addEventListener("click", () => {
+      closeNav(); 
+    });
+  }); 
+    
   // Close menu after click on smaller screens
   $(window).on("resize", function() {
     if ($(window).width() < 846) {

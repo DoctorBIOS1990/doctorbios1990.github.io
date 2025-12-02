@@ -116,6 +116,7 @@ html {
 
 .main-nav li {
     display: block;
+    transition: .5s ease;
 }
 
 .main-nav li a {
@@ -126,16 +127,16 @@ html {
     font-weight: 700;
     color: #fff;
     width: 100%;
-    transition: all 0.5s;
+    transition: all 0.5s ease;
     border-top: 1px solid rgb(102, 26, 131);
 }
 
 .main-nav li:hover a,
 .main-nav li.active a {
-    background: rgb(102, 26, 131);
+    background: linear-gradient( 45deg, #661a83, black);
     color: white;
+    padding-left: 15px;
 }
-
 /* Sidebar Menu */
 
 .menu .image {
@@ -348,7 +349,7 @@ html {
     padding: 12px 20px;
     color: #fff;
     background-color: #661a83;
-    
+    border-radius: 5px;    
     font-size: 13px;
     font-weight: 800;
     letter-spacing: 0.5px;
@@ -364,8 +365,8 @@ html {
 button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #fff;
-    color: rgb(181,0,253);
+    background-color: #661a83;
+    color: #fff;
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.5px;
@@ -374,12 +375,13 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover {
     outline: none;
-    background-color: rgb(181,0,253);
-    color: #fff;
+    background-color: #fff;
+    color: #661a83;
 }
 
 
@@ -405,7 +407,7 @@ button:hover {
 #profile{
     border: none;    
 }
-
+  
 .right-image-post h4,
 .left-image-post h4 {
     margin-top: 30px;
@@ -619,7 +621,7 @@ figure.snip1321 span {
 figure.snip1321 i {
   position: relative!important;
   font-size: 18px;
-  background-color: rgb(181,0,253);
+  background-color: #661a83;
   width: 40px;
   height: 40px;
   display: inline-block;
@@ -706,7 +708,7 @@ section.contact-me {
     font-size: 14px;
     height: 180px;
     max-height: 220px;
-    line-height: 40px;
+    line-height: 25px;
     width: 100%;
     padding-left: 15px;
 }
@@ -720,12 +722,24 @@ section.contact-me {
     text-align: center;
 }
 
+footer {
+    margin-top: 20px;
+    color: #fff;
+    width: 55%;
+    right: 10%;
+    left: 35%;
+    position: relative;
+    min-height: 100px;
+    padding-bottom: 5px;
+
+}
+
 @media screen and (max-width: 1680px) {
     .menu {
         left: 5%;
     }
 
-    .section {
+    .section, footer {
         color: #fff;
         width: 65%;
         right: 5%;
@@ -787,7 +801,12 @@ section.contact-me {
     display: none;
 }  
 
-@media screen and (max-width: 845px) {        
+@media screen and (min-width: 845px) {    
+    section{
+        filter: none !important;
+    }    
+}
+@media screen and (max-width: 845px) {    
     #menu-toggle,
     #menu-close {
         display: inline-block;
@@ -821,6 +840,7 @@ section.contact-me {
     }
 
     .menu.open {
+        border-right: #ccc 2px solid;
         display: inline-block;
         -webkit-transform: translateX(0) !important;
                 transform: translateX(0) !important;
@@ -830,7 +850,7 @@ section.contact-me {
         display: inline-block;
     }
 
-    .section {
+    .section, footer {
         width: 94%;
         right: 3%;
         left: 3%;
@@ -853,7 +873,6 @@ section.contact-me {
         margin-bottom: 20px;
     }
 }
-
 .icon-proyect{
     color:black;
     margin:0;

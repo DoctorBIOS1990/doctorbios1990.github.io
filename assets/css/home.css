@@ -1,11 +1,11 @@
-#firstSection{
+#home{
     padding: 120px 1% 10px;
 }
 
 a {
     color:#af60f3;
     font-weight: bold;
-    transition: all .45s ease;
+    transition: .2s ease;
 }
 
 a:hover {
@@ -27,11 +27,12 @@ a:hover {
     margin-right: 15px;
     height: 32px;
     padding: 0 15px;
-    line-height: 32px;
+    line-height: 30px;
     font-size: 20px;
     font-weight: 500;
     border-radius: 5px;
-    background: #661a83;
+    background: linear-gradient( 200deg, #661a83, black);
+    border: #4f1465 solid 1px;
     color: #fff;
 }
 
@@ -60,10 +61,11 @@ a:hover {
 }
 
 .home-text p{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color:#fff;
     line-height: 1.8;
-    margin-bottom:30px ;
+    margin-top: 40px;
+    margin-bottom: 30px;
     width: 97%;
     justify-content: flex-start;
 }
@@ -85,7 +87,8 @@ a:hover {
     transition: all .45s ease;
     color: #fff;
     margin-top: 30px;
-    margin: 10px 10px;
+    margin-left: 0;
+    margin-right: 15px;
     border: #7e21a3 2px solid;
 }
 .btn:nth-child(1):hover{
@@ -137,19 +140,23 @@ a:hover {
 /*-- FOOTER--*/
 
 .scrollup{
+    display: none;	
 	width:40px;
 	height:40px;			
-	position:fixed;
+	position: fixed;
 	bottom:40px;
 	right:8px;
     font-size: 36px;
     color:white !important;
-    display:none;	
+    
     transition: all .45s ease;
     -webkit-filter: drop-shadow(0px 0px 3px black);
     filter: drop-shadow(0px 0px 3px black);
 }
 
+.show{
+    display: block;	
+}
 .scrollup:hover{
     cursor:pointer;
 }
@@ -178,6 +185,13 @@ a:hover {
     color: #661a83;
  }
 
+ fieldset label{
+    color: red;
+ }
+
+.input-error {
+    border: 2px solid red !important;
+}
  @media(width < 494px){
     .home-text h1{
         font-size: 3rem;
@@ -204,6 +218,11 @@ a:hover {
         font-size: 0.8rem;
     }
  }
+ @media(width < 412px){
+    #home{
+        padding: 80px 1% 10px;
+    }
+ }
  @media(width < 405px){
     .btn{
         font-size: 0.7rem;
@@ -225,10 +244,13 @@ a:hover {
         font-size: 2.8rem;
     }
  }
-
  @media(width < 365px){
     .home-text h2{
         font-size: 1.3rem;
     }
  }
-
+ @media(width < 359px){
+    .home-text h1{
+        font-size: 2.7rem;
+    }
+ }

@@ -3,7 +3,7 @@
   var menu = document.getElementById("menu");
   var close = document.getElementById("menu-close");
   var sections = document.querySelectorAll(".section");
-
+ 
   // Open Menu Mobile
   openMenu = () => {
     if (menu.classList.contains("open")) {
@@ -12,7 +12,6 @@
           menu.classList.add("open");
           sections.forEach(function(section) {
               toggle.style.opacity = "0%";
-              section.style.filter = "blur(10px)";
         });
       };
   }
@@ -22,7 +21,6 @@
       menu.classList.remove("open");
       sections.forEach(function(section) {
           toggle.style.opacity = "100%";
-          section.style.filter = "";
       });
   }
 
@@ -37,7 +35,7 @@
       closeNav(); 
     });
   }); 
-    
+
   // Close menu after click on smaller screens
   $(window).on("resize", function() {
     if ($(window).width() < 846) {

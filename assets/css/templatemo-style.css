@@ -120,8 +120,8 @@ html {
 }
 
 .main-nav li a {
-    height: 70px;
-    line-height: 70px;
+    height: 60px;
+    line-height: 60px;
     display: inline-block;
     font-size: 16px;
     font-weight: 700;
@@ -144,17 +144,16 @@ html {
 }
 
 .menu .image img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
+    width: 120px;
+    height: 120px;
     text-align: center;
 }
 
 .menu .author-content {
-    margin: 40px 0px 60px 0px;
+    margin: 10px 0 20px 0;
 }
 
-.menu .author-content h4 {
+.menu .author-content h4, .author-content p {
     margin-bottom: 0px;
 }
 
@@ -449,7 +448,7 @@ button:hover {
 }
 
 .service-item:hover {
-    background-color: rgba(250, 250, 250, 1);
+    background-color: #ccc;
 }
 
 .service-item:hover h4 {
@@ -631,7 +630,7 @@ figure.snip1321 i {
   color: #fff;
 }
 figure.snip1321:after {
-  background-color: #ffffff;
+  background-color: #fff;
   position: absolute;
   content: "";
   display: block;
@@ -647,6 +646,7 @@ figure.snip1321:after {
   -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
   opacity: 0;
+  border-radius: 5px;
 }
 figure.snip1321 a {
   left: 0;
@@ -674,7 +674,6 @@ figure.snip1321.hover:after {
     object-fit: contain;
     height:100%;
 }
-
 /* Contact Me */
 
 section.contact-me {
@@ -759,7 +758,7 @@ footer {
     }
 
     .menu .image {
-        margin-top: 60px;
+        margin-top: 40px;
     }
 }
 
@@ -807,6 +806,11 @@ footer {
     }    
 }
 @media screen and (max-width: 845px) {    
+    .main-nav li a {
+        height: 60px;
+        line-height: 60px;
+    }
+
     #menu-toggle,
     #menu-close {
         display: inline-block;
@@ -822,7 +826,7 @@ footer {
     }
 
     .menu .image {
-        margin-top: 40px;        
+        margin-top: 20px;        
     }
 
     .menu .image img {
@@ -831,7 +835,7 @@ footer {
     }
 
     .menu .author-content {
-        margin: 20px 0px 40px 0px;
+        margin: 20px 0px 20px 0px;
     }
 
     .menu .container {

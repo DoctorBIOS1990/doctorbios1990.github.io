@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://deskfixall,github.io/sitemaps.xml

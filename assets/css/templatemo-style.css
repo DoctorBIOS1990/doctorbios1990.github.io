@@ -879,7 +879,7 @@ footer {
     margin:0;
 }
 
-@media (width < 767px) {    
+@media (width < 768px) {    
     .pictureUO{
         margin-bottom: 20px;
     }    

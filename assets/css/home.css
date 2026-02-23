@@ -170,7 +170,7 @@ a:hover {
     filter:none;
  }
 
- .pictureSchool i{
+ .pictureSchool i, .pictureUO i{
     margin-top: 10px;
     border-radius: 5px;
     color:white;

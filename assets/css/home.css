@@ -132,7 +132,7 @@ a:hover {
     margin-left: 2px;
 }
 
-#arrowDown i{
+.arrowDown i{
     margin-left: -2px;
     position: absolute;
 }

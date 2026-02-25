@@ -1,7 +1,7 @@
 //according to loftblog tut
 $(".main-menu li:first").addClass("active");
 
-var showSection = function showSection(section, isAnimate) {
+const showSection = (section, isAnimate) => {
   var direction = section.replace(/#/, ""),
     reqSection = $(".section").filter(
       '[data-section="' + direction + '"]'
@@ -20,7 +20,7 @@ var showSection = function showSection(section, isAnimate) {
   }
 };
 
-var checkSection = function checkSection() {
+const checkSection = () => {
   $(".section").each(function() {
     var $this = $(this),
       topEdge = $this.offset().top - 80,
@@ -128,7 +128,7 @@ submit_telegram.addEventListener('click', () =>{
 checkInput = (input, label) => {
     if (input.value === ''){
         label.innerText = 'Se deben completar este campo.';
-        return false; 
+        return ; 
     }
     label.innerText = '';
     return true; 
@@ -140,32 +140,49 @@ checkEmail = (email, label) => {
 
     if (email.value.trim() === ''){
         label.innerText = 'Se deben completar este campo.';
-        return false;
+        return ;
     }
 
     if (!emailRegex.test(email.value)) {
         label.innerText = 'Su correo no es valido.';
-        return false;
+        return ;
     } 
     resetColor(email);
     return true;
 }
 
 // Remove all danger borders 
-fullname.addEventListener('input', function(){
+fullname.addEventListener('input', () => {
     name_label.innerText = '';
     resetColor(this);
 });
-email.addEventListener('input', function(){
+email.addEventListener('input', () => {
     email_label.innerText = '';
     resetColor(this);
 });
-message.addEventListener('input', function(){
+message.addEventListener('input', () => {
     message_label.innerText = '';
     resetColor(this);
 });
 
 // Reset color
-resetColor = (object) =>{
+resetColor = (object) => {
     object.removeAttribute('style', 'border:red 2px solid');
 };
+
+
+//CV Dropdwon
+const dropdownBtn = document.getElementById('dropdownBtn');
+const dropdownContent = document.getElementById('dropdownContent');
+
+// Mostrar u ocultar el dropdown
+dropdownBtn.addEventListener('click', () => {
+  dropdownContent.classList.toggle('show');
+});
+
+// Cerrar dropdown si se hace clic fuera
+window.addEventListener('click', e => {
+  if (!e.target.matches('.dropdown-button')) {
+    dropdownContent.classList.remove('show');
+  }
+});

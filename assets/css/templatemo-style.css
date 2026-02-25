@@ -369,7 +369,6 @@ button {
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.5px;
-    text-transform: uppercase;
     transition: all 0.5s;
     border: none;
     outline: none;
@@ -878,6 +877,57 @@ footer {
     color:black;
     margin:0;
 }
+
+
+.dropdown {
+    position: relative;
+    margin-right: 15px;
+    display: inline-block;
+  }
+
+/* Botón del dropdown */
+.dropdown-button {
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Contenido desplegable, oculto por defecto */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #661a83;
+    min-width: 100%;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    z-index: 1;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+/* Cada item del dropdown */
+.dropdown-content div {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.dropdown-content div a {
+    color:#fff !important;
+}
+.dropdown-content div:hover {
+    background-color: #441158;
+    font-weight: bold;
+}
+
+/* Mostrar contenido cuando está activo */
+.show {
+    display: block;
+}
+
 
 @media (width < 768px) {    
     .pictureUO{

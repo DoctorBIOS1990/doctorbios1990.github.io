@@ -208,14 +208,29 @@ a:hover {
         font-size: 1.5rem;
     }
  }
- @media(width < 447px){
+ @media(width < 468px){
     .btn{
         font-size: 0.9rem;
     }
  }
+ @media(width < 447px){
+    .btn{
+        font-size: 0.88rem;
+    }
+ }
+ @media(width < 442px){
+    .btn{
+        font-size: 0.8rem;
+    }
+ } 
  @media(width < 426px){
     .btn{
         font-size: 0.8rem;
+    }
+ }
+ @media(width < 421px){
+    .btn{
+        font-size: 0.78rem;
     }
  }
  @media(width < 412px){

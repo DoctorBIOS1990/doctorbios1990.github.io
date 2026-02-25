@@ -877,8 +877,6 @@ footer {
     color:black;
     margin:0;
 }
-
-
 .dropdown {
     position: relative;
     margin-right: 15px;
@@ -895,10 +893,14 @@ footer {
     border-radius: 4px;
     text-align: center;
 }
-
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(188, 46, 245, 0.25);
+}
 /* Contenido desplegable, oculto por defecto */
 .dropdown-content {
     display: none;
+    margin-top: 10px;
     position: absolute;
     background-color: #661a83;
     min-width: 100%;

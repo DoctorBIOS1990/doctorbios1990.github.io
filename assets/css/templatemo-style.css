@@ -929,8 +929,10 @@ footer {
 .show {
     display: block;
 }
-
-
+.container-contact{
+    text-align: center;
+    place-content: center;
+}
 @media (width < 768px) {    
     .pictureUO{
         margin-bottom: 20px;

@@ -151,27 +151,27 @@ checkEmail = (email, label) => {
     return true;
 }
 
-// Remove all danger borders 
-fullname.addEventListener('input', () => {
-    name_label.innerText = '';
-    resetColor(fullname);
-});
-email.addEventListener('input', () => {
-    email_label.innerText = '';
-    resetColor(email);
-});
-message.addEventListener('input', () => {
-    message_label.innerText = '';
-    resetColor(message);
-});
-
 // Reset color
-resetColor = (object) => {
-    object.removeAttribute('style', 'border:red 2px solid');
+const resetColor = (object) => {
+  object.removeAttribute('style', 'border:red 2px solid');
 };
 
+// Remove all danger borders 
+fullname.addEventListener('input', function () {
+    name_label.innerText = '';
+    resetColor(this);
+});
+email.addEventListener('input', function () {
+    email_label.innerText = '';
+    resetColor(this);
+});
+message.addEventListener('input', function () {
+    message_label.innerText = '';
+    resetColor(this);
+});
 
-//CV Dropdwon
+
+// CV Dropdown
 const dropdownBtn = document.getElementById('dropdownBtn');
 const dropdownContent = document.getElementById('dropdownContent');
 

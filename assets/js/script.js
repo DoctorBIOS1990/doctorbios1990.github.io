@@ -128,7 +128,7 @@ submit_telegram.addEventListener('click', () =>{
 checkInput = (input, label) => {
     if (input.value === ''){
         label.innerText = 'Se deben completar este campo.';
-        return false ; 
+        return ; 
     }
     label.innerText = '';
     return true; 
@@ -140,12 +140,12 @@ checkEmail = (email, label) => {
 
     if (email.value.trim() === ''){
         label.innerText = 'Se deben completar este campo.';
-        return false ;
+        return ;
     }
 
     if (!emailRegex.test(email.value)) {
         label.innerText = 'Su correo no es valido.';
-        return false ;
+        return ;
     } 
     resetColor(email);
     return true;
@@ -154,15 +154,15 @@ checkEmail = (email, label) => {
 // Remove all danger borders 
 fullname.addEventListener('input', () => {
     name_label.innerText = '';
-    resetColor(this);
+    resetColor(fullname);
 });
 email.addEventListener('input', () => {
     email_label.innerText = '';
-    resetColor(this);
+    resetColor(email);
 });
 message.addEventListener('input', () => {
     message_label.innerText = '';
-    resetColor(this);
+    resetColor(message);
 });
 
 // Reset color

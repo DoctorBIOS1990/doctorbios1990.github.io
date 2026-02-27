@@ -128,7 +128,7 @@ submit_telegram.addEventListener('click', () =>{
 checkInput = (input, label) => {
     if (input.value === ''){
         label.innerText = 'Se deben completar este campo.';
-        return ; 
+        return false ; 
     }
     label.innerText = '';
     return true; 
@@ -140,12 +140,12 @@ checkEmail = (email, label) => {
 
     if (email.value.trim() === ''){
         label.innerText = 'Se deben completar este campo.';
-        return ;
+        return false ;
     }
 
     if (!emailRegex.test(email.value)) {
         label.innerText = 'Su correo no es valido.';
-        return ;
+        return false ;
     } 
     resetColor(email);
     return true;

@@ -1,0 +1,10 @@
+footer {
+    margin-top: 20px;
+    color: #fff;
+    width: 55%;
+    right: 10%;
+    left: 35%;
+    position: relative;
+    min-height: 100px;
+    padding-bottom: 5px;
+}

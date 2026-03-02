@@ -1,0 +1,23 @@
+.expLine{
+    border-left: #ccc 2px solid;
+}
+.expLine .left-image-post .right-text p, .expLine .left-image-post .right-text h4:nth-child(2){
+    margin-left:40px;
+}
+.expLine .right-text p{
+    border: white 1px solid;
+    padding: 10px;
+}
+.title{
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left:3px;
+}
+#arrowUp i{
+    margin-left: 2px;
+}
+.arrowDown i{
+    margin-left: -2px;
+    position: absolute;
+}

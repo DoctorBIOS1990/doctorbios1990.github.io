@@ -31,6 +31,7 @@ body {
     background-color: rgb(32,0,40);
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
+    top: 0 !important;
 }
 input,
 select,
@@ -84,4 +85,5 @@ ul li {
 }
 .container {
     margin: 0 auto;
+
 }

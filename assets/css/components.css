@@ -236,3 +236,26 @@ button:hover {
 .scrollup:hover{
     cursor:pointer;
 }
+
+.skiptranslate, .VIpgJd-ZVi9od-l4eHX-hSRGPd{
+    color: #fff !important;
+    font-weight: bold;
+}
+#google_translate_element {
+    margin: 10px;
+}
+#google_translate_element img {
+    width: auto;
+}
+#google_translate_element select {
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    background: linear-gradient( 200deg, #661a83, black);
+    font-weight: bold;
+    color: #fff;
+}
+#google_translate_element select option{
+    background: #661a83;
+    font-weight: bold;
+}

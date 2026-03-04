@@ -19,6 +19,7 @@ html{
     font-optical-sizing: auto;
     font-display: swap;
     scroll-behavior: smooth;
+    white-space: normal;
 }
 #page-wraper {
     background: url(../images/page-bg.webp) no-repeat center center fixed;
@@ -87,3 +88,4 @@ ul li {
     margin: 0 auto;
 
 }
+

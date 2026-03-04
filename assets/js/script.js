@@ -127,7 +127,7 @@ submit_telegram.addEventListener('click', () =>{
 // Check fields
 checkInput = (input, label) => {
     if (input.value === ''){
-        label.innerText = 'Se deben completar este campo.';
+        label.innerText = 'Se debe completar este campo.';
         return ; 
     }
     label.innerText = '';
@@ -139,7 +139,7 @@ checkEmail = (email, label) => {
     const emailRegex = /^[a-zA-Z0-9._-]+@[^,s@]+.[a-zA-Z]{2,}$/;
 
     if (email.value.trim() === ''){
-        label.innerText = 'Se deben completar este campo.';
+        label.innerText = 'Se debe completar este campo.';
         return ;
     }
 

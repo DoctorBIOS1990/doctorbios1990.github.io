@@ -1,5 +1,5 @@
 .expLine{
-    border-left: #ccc 2px solid;
+    border-left: #fff 2px solid;
 }
 .expLine .left-image-post .right-text p, .expLine .left-image-post .right-text h4:nth-child(2){
     margin-left:40px;
@@ -20,4 +20,5 @@
 .arrowDown i{
     margin-left: -2px;
     position: absolute;
+
 }

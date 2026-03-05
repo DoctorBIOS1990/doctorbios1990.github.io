@@ -86,7 +86,7 @@
         padding-right: 15px;
     }
     .menu.open {
-        border-right: #ccc 2px solid;
+        border-right: #fff 2px solid;
         display: inline-block;
         -webkit-transform: translateX(0) !important;
                 transform: translateX(0) !important;
@@ -195,4 +195,5 @@
     .home-text h1{
         font-size: 2.7rem;
     }
+
  }

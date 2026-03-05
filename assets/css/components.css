@@ -196,7 +196,7 @@ button:hover {
   /*  border-bottom: 3px solid rgba(250, 250, 250, 0.25);*/
 }
 .section-icon {
-    font-size: 64px;
+    font-size: 64px !important;
 }
 .section-heading {
     text-align: center;

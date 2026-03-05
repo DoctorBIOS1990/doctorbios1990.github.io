@@ -1,7 +1,6 @@
 
 /* External Resources */
 @import url(../vendor/bootstrap/css/bootstrap.min.css);
-@import url(fontawesome.css);
 @import url(owl.css);
 @import url(lightbox.css);
 
@@ -15,4 +14,5 @@
 @import url(proyects.css);
 @import url(contact.css);
 @import url(footer.css);
+
 @import url(responsible.css);

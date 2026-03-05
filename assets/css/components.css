@@ -260,6 +260,7 @@ button:hover {
     background: linear-gradient( 200deg, #661a83, black);
     font-weight: bold;
     color: #fff;
+	width: 170px;
 }
 #google_translate_element select option{
     background: #661a83;

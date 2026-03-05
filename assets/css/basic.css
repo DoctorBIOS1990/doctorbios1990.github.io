@@ -1,4 +1,4 @@
-@font-face
+¹@font-face
 {
     font-family: "MontSerrat";
     src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
@@ -22,7 +22,7 @@ html{
     white-space: normal;
 }
 #page-wraper {
-    /*background: url(../images/page-bg.webp) no-repeat center center fixed;*/
+    background: url(../images/page-bg.webp) no-repeat center center fixed;
     background-size: cover;
     background-position: center;
     width:100%;

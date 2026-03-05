@@ -23,7 +23,6 @@ html{
     white-space: normal;
 }
 #page-wraper {
-    /*background: url(../images/page-bg.webp) no-repeat center center fixed;*/
     background: linear-gradient(-150deg, #300c3e, black) no-repeat center center fixed;
     width: 100%;
     height: 100%;

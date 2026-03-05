@@ -41,7 +41,7 @@ html.lb-disable-scrolling {
   height: 250px;
   margin: 0 auto;
   border-radius: 4px;
-  background-color: white;
+  background: linear-gradient(-150deg, #303030, black);
 }
 .lb-outerContainer:after {
   content: "";

@@ -1,12 +1,3 @@
-@font-face
-{
-    font-family: "MontSerrat";
-    src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-    font-optical-sizing: auto;
-    font-display: swap;
-}
 html{
     -ms-text-size-adjust: 100%; 
     -webkit-text-size-adjust: 100%;

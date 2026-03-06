@@ -7,14 +7,14 @@
     font-optical-sizing: auto;
     font-display: swap;
 }
-html {
+html{
     -ms-text-size-adjust: 100%; 
     -webkit-text-size-adjust: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-* {
+*{
     font-family: "MontSerrat", Tahoma;
     font-optical-sizing: auto;
     font-display: swap;
@@ -22,16 +22,20 @@ html {
     font-display: swap;
     white-space: normal;
 }
-#page-wraper {
-    background: linear-gradient(-150deg, #300c3e, black) no-repeat center center fixed;
+main {
+    background: linear-gradient(-150deg, #300c3e, black) no-repeat center center fixed; 
     width: 100%;
+    min-height: 100vh;
     height: 100%;
+    overscroll-behavior: contain !important;
+    touch-action: pan-y !important;
+    background-color: #16011c;
 }
 body {
-    background-color: #200028;
+    background-color: black;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
-    top: 0 !important;      
+    top: 0 !important;
 }
 input,
 select,
@@ -85,5 +89,4 @@ ul li {
 }
 .container {
     margin: 0 auto;
-
 }

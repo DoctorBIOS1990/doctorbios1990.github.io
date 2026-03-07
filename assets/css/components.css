@@ -21,7 +21,7 @@ button:hover {
     text-align: center;
 }
 .main-nav li:last-child a {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #661a83;
 }
 .main-nav li {
     display: block;
@@ -36,7 +36,7 @@ button:hover {
     color: #fff;
     width: 100%;
     transition: all 0.5s ease;
-    border-top: 1px solid rgb(102, 26, 131);
+    border-top: 1px solid #661a83;
 }
 .main-nav li:hover a,
 .main-nav li.active a {
@@ -44,7 +44,6 @@ button:hover {
     color: white;
     padding-left: 15px;
 }
-
 /* Sidebar Menu */
 .menu .container {
     padding-left: 0;
@@ -71,6 +70,7 @@ button:hover {
 }
 .menu .social-network {
     margin-top: 30px;
+    height:50px;
 }
 .menu .social-network ul li {
     margin: 0 3px;
@@ -152,6 +152,7 @@ button:hover {
     color: #fff;
     cursor: pointer;
     font-size: 25px;
+    font-weight: bold;
     position: fixed;
     right: 25px;
     top: 25px;
@@ -166,6 +167,7 @@ button:hover {
     background-color: #fff;
     width: 60px;
     height: 60px;
+    padding: 10px;
     text-align: center;
     display: inline-block;
     line-height: 60px;
@@ -181,10 +183,15 @@ button:hover {
     background-color: #fff;
     width: 100%;
     height: 60px;
+    padding: 20px;
     text-align: center;
     display: inline-block;
     line-height: 60px;
 }
+#menu-toggle,
+#menu-close {
+    display: none;
+}  
 .section {
     color: #fff;
     width: 55%;
@@ -260,7 +267,9 @@ button:hover {
     background: linear-gradient( 200deg, #661a83, black);
     font-weight: bold;
     color: #fff;
-	width: 170px;
+    scrollbar-width: thin;
+    scrollbar-color: #661a83 #f0e8f9;
+    width: 170px;
 }
 #google_translate_element select option{
     background: #101010;

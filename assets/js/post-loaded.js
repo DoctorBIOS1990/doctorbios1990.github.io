@@ -1,7 +1,6 @@
 // Before loaded page
 document.addEventListener("DOMContentLoaded", function () {
     let resources = `
-    <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     `;
     document.head.insertAdjacentHTML('beforeend', resources);

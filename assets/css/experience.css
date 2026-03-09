@@ -12,13 +12,31 @@
     text-overflow: ellipsis; 
     white-space: nowrap;
     overflow: hidden;
-    margin-left:3px;
+    margin-left: 3px;
 }
-#arrowUp i{
+#arrowUp img{
     margin-left: 2px;
-}
-.arrowDown i{
-    margin-left: -2px;
     position: absolute;
-
+}
+.location{
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    border-radius: 11px;
+}
+.container-arrow{
+    position: absolute;
+    margin-top: -39px;
+}
+.arrow{
+    width: 30px;
+    height: 30px;    
+}
+.Up{
+    margin-left: -2px;
+    margin-top: 25px;    
+}
+.UpEnd{
+    margin-left: -4px;
+    margin-top: -10px;    
 }

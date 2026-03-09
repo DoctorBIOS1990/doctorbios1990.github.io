@@ -44,15 +44,10 @@
         width: 25%;
     }
 }
-#menu-toggle,
-#menu-close {
-    display: none;
-}  
-@media screen and (min-width: 845px) {    
-    section{
-        filter: none !important;
-    }    
-}
+
+/*==================================
+=         MARK: Mobile
+====================================*/
 @media screen and (max-width: 845px) {    
     .main-nav li a {
         height: 60px;
@@ -86,10 +81,13 @@
         padding-right: 15px;
     }
     .menu.open {
-        border-right: #fff 2px solid;
+        border-right: #661a83 2px solid;
         display: inline-block;
         -webkit-transform: translateX(0) !important;
                 transform: translateX(0) !important;
+        
+        -webkit-filter: drop-shadow(0px 0px 10px black);
+        filter: drop-shadow(0px 0px 10px black);
     }
     .responsive-nav {
         display: inline-block;
@@ -103,7 +101,7 @@
         width: 94%;
         margin: 3%;
     }
-    .right-image-post img {
+    .right-image-post .img-school {
         margin-top: 30px;
     }
     .isotope-item {
@@ -195,5 +193,4 @@
     .home-text h1{
         font-size: 2.7rem;
     }
-
  }

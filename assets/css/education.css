@@ -9,8 +9,8 @@
     border: rgb(102, 26, 131) 2px solid;    
 }
 #profile{
-    border: none;    
-} 
+    border: none;
+}
 .right-image-post h4,
 .left-image-post h4 {
     margin-top: 30px;
@@ -19,28 +19,28 @@
 .left-image-post p {
     margin-top: 20px;
 }
-.right-image-post .white-button,
-.left-image-post .white-button {
+.right-image-post .titulo-button,
+.left-image-post .titulo-button {
     margin-top: 30px;
 }
-.pictureSchool i, .pictureUO i{
+.picture-button{
     margin-top: 10px;
-    border-radius: 5px;
-    color:white;
     padding: 10px;
-    background:#661a83;
-    font-size: 24px;
+    background-color:#661a83;
+    width: 50px !important;
+    height: 50px;
     transition: all .45s ease;
 }
-.pictureSchool i:hover{
-    background:white;
+.picture-button:hover{
+    background:#3f1051;
     color: #661a83;
 }
-.white-button a {
+.titulo-button a {
     display: inline-block;
     padding: 12px 20px;
     color: #fff;
     background-color: #661a83;
+    border: 2px solid #661a83;
     border-radius: 5px;    
     font-size: 13px;
     font-weight: 800;
@@ -48,7 +48,12 @@
     text-transform: uppercase;
     transition: all 0.5s;
 }
-.white-button a:hover {
-    background-color: #fff;
-    color: #661a83;
+.titulo-button a:hover {
+    background:#3f1051;
+    border: 2px solid #661a83;
+}
+.certificate{
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
 }

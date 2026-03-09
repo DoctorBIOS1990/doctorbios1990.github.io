@@ -12,6 +12,7 @@
 .service-item h4 {
     transition: all 0.5s;
     text-align: center;
+    margin-bottom: 20px;
 }
 .service-item p {
     transition: all 0.5s;
@@ -37,28 +38,35 @@
 }
 .service-item .first-service-icon {
     background-image: url(../images/first-white-icon.webp);
-    margin-left:39%;
+}
+.service-item p {
+    font-size: large;
+    text-align: center;
+}
+.center-skills{
+    place-content: center;
+    height: 50%;
+}
+.service-item .languajes {
+    font-size: 18px;
 }
 .service-item:hover .first-service-icon {
     background-image: url(../images/first-main-icon.webp);
 }
 .service-item .second-service-icon {
     background-image: url(../images/second-white-icon.webp);
-    margin-left:39%;
 }
 .service-item:hover .second-service-icon {
     background-image: url(../images/second-main-icon.webp);
 }
 .service-item .third-service-icon {
     background-image: url(../images/third-white-icon.webp);
-    margin-left:39%;
 }
 .service-item:hover .third-service-icon {
     background-image: url(../images/third-main-icon.webp);
 }
 .service-item .fourth-service-icon {
     background-image: url(../images/fourth-white-icon.webp);
-    margin-left:39%;
 }
 .service-item:hover .fourth-service-icon {
     background-image: url(../images/fourth-main-icon.webp);

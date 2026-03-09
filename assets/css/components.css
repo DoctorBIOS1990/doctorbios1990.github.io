@@ -14,14 +14,13 @@ button {
 }
 button:hover {
     outline: none;
-    background-color: #fff;
-    color: #661a83;
+    background-color: #3f1051;
 }
 .main-nav {
     text-align: center;
 }
 .main-nav li:last-child a {
-    border-bottom: 2px solid #661a83;
+    border-bottom: 1px solid #661a83;
 }
 .main-nav li {
     display: block;
@@ -40,9 +39,10 @@ button:hover {
 }
 .main-nav li:hover a,
 .main-nav li.active a {
-    background: linear-gradient( 45deg, #661a83, black);
+    background: linear-gradient(-66.77deg, #661a83, black);
     color: white;
     padding-left: 15px;
+    border-left: 3px solid #661a83;
 }
 /* Sidebar Menu */
 .menu .container {
@@ -69,8 +69,8 @@ button:hover {
     color: #fff;
 }
 .menu .social-network {
-    margin-top: 30px;
-    height:50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .menu .social-network ul li {
     margin: 0 3px;
@@ -89,12 +89,9 @@ button:hover {
 }
 .menu .social-network ul li div:hover {
     cursor: pointer;
-    background-color: #fff;
-    color: rgb(181,0,253);
+    background-color: #661a83;
 }
-.menu .social-network p{
-    margin-bottom: 10px;
-}
+ 
 .menu .copyright-text {
     position: relative;
     margin-top: 60px;
@@ -120,33 +117,32 @@ button:hover {
     text-decoration: none;
     color: inherit;
 }
-.menu {
-    text-align: center;
-}
 .menu::-webkit-scrollbar {
     display: none;
 }
 .menu {
+    text-align: center;
     left: 10%;
-    -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+    /*-webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);*/
     -webkit-overflow-scrolling: touch;
     background: rgb(0,0,0,.6);
+    /*background: linear-gradient(-180deg, black, transparent);*/
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     box-sizing: border-box;
     height: 100vh;  
-    max-height: 100vh !important;
-    max-width: 80vw !important;
-    min-width: 45px !important;
+    max-height: 100vh;
+    max-width: 80vw;
+    min-width: 45px;
     outline: none;
-    overflow-x: hidden !important;
-    overflow-y: auto !important;
+    overflow-x: hidden;
+    overflow-y: auto ;
     padding: 0;
-    position: fixed !important;
+    position: fixed ;
     top: calc(0px);  
     width: 20%;
     will-change: transform;
-    z-index: 9999 !important;
+    z-index: 9999;
 }
 .menu-toggle {
     color: #fff;
@@ -179,14 +175,14 @@ button:hover {
 #menu-close {
     cursor: pointer;
     text-align: right;
-    color: rgb(181,0,253);
-    background-color: #fff;
+    background-color: none;
     width: 100%;
-    height: 60px;
-    padding: 20px;
-    text-align: center;
+    height: 30px;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: right;
     display: inline-block;
-    line-height: 60px;
+    place-content: right;
 }
 #menu-toggle,
 #menu-close {
@@ -223,7 +219,7 @@ button:hover {
 .section-heading .line-dec, .section-closing .line-dec{
     width: 60px;
     height: 3px;
-    background-color: rgb(181,0,253);
+    background-color: #b500fd;
     margin: 10px auto;
 }
 .section-heading span , .section-closing span{
@@ -235,13 +231,14 @@ button:hover {
 }
 .scrollup{
     display: none;	
-	width:40px;
-	height:40px;			
+	width: 40px;
+	height: 40px;			
 	position: fixed;
-	bottom:40px;
-	right:8px;
-    font-size: 36px;
-    color:white !important;
+    border: #661a83 2px solid;
+    border-radius: 5px;
+	bottom: 20px;
+	right: 20px;
+    background: linear-gradient(180deg, #3f1051, #101010);
     transition: all .45s ease;
     -webkit-filter: drop-shadow(0px 0px 3px black);
     filter: drop-shadow(0px 0px 3px black);
@@ -249,7 +246,6 @@ button:hover {
 .scrollup:hover{
     cursor:pointer;
 }
-
 .skiptranslate, .VIpgJd-ZVi9od-l4eHX-hSRGPd{
     color: #fff !important;
     font-weight: bold;
@@ -261,6 +257,8 @@ button:hover {
     width: auto;
 }
 #google_translate_element select {
+    font-family: "MontSerrat";
+    font-size: 12px;
     text-align: center;
     padding: 5px;
     border-radius: 5px;

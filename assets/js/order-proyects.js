@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('.isotope-toolbar').addEventListener('change', (e) => {
         if (e.target.matches('input[name="isotope-filter"]')) {
           let filterValue = e.target.getAttribute('data-type');
-          iso.arrange({ filter: filterValue === '*' ? '*' : [`data-type=${filterValue}`] });
+          iso.arrange({ filter: filterValue === '*' ? '*' : `data-type=${filterValue}` });
         }
       });
     });

@@ -14,13 +14,13 @@ html{
     white-space: normal;
 }
 main {
-    background: linear-gradient(-150deg, #300c3e, black) no-repeat center center fixed; 
+    /*background: linear-gradient(-150deg, #300c3e, black) no-repeat center center fixed;*/
     width: 100%;
     min-height: 100vh;
     height: 100%;
     overscroll-behavior: contain !important;
     touch-action: pan-y !important;
-    background-color: #16011c;
+    /*background-color: #16011c;*/
 }
 body {
     background-color: black;

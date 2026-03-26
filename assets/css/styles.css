@@ -3,8 +3,10 @@
 @import url(owl.css);
 @import url(lightbox.css);
 @import url(fonts.css);
+@import url(glassmorphism.css);
 
 /* My styles */
+@import url(efects.css);
 @import url(basic.css);
 @import url(components.css);
 @import url(home.css);
@@ -15,3 +17,4 @@
 @import url(contact.css);
 @import url(footer.css);
 @import url(responsible.css);
+

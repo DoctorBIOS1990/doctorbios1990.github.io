@@ -1,3 +1,11 @@
+::selection{
+    background-color: #661a83;
+    color: #fff;
+}
+::-moz-selection{
+    background-color: #661a83;
+    color: #fff;
+}
 button {
     display: inline-block;
     padding: 10px 20px;
@@ -125,7 +133,7 @@ button:hover {
     left: 10%;
     /*-webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);*/
     -webkit-overflow-scrolling: touch;
-    background: rgb(0,0,0,.6);
+    background: rgb(0,0,0,.3);
     /*background: linear-gradient(-180deg, black, transparent);*/
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
@@ -196,7 +204,6 @@ button:hover {
     position: relative;
     min-height: 100vh;
     padding-bottom: 10px;
-  /*  border-bottom: 3px solid rgba(250, 250, 250, 0.25);*/
 }
 .section-icon {
     font-size: 64px !important;

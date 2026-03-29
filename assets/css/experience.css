@@ -7,6 +7,8 @@
 .expLine .right-text p{
     border: white 1px solid;
     padding: 10px;
+    background-color: rgba(250, 250, 250, 0.1);
+    border-radius: 5px;
 }
 .title{
     text-overflow: ellipsis; 

@@ -25,7 +25,14 @@
     height: 24px;
     background-color: black;
     border-radius: 11px;
+    margin-bottom: 4px;
 }
+.is-active{
+    animation: zoomAnim 1s infinite;
+}
+.enfasis{
+    animation: transition_enfasis 1s infinite;
+  }  
 .container-arrow{
     position: absolute;
     margin-top: -39px;

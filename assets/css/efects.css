@@ -1,0 +1,21 @@
+.gradient-silver {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(-180deg,#ccc,rgba(176, 172, 172, 0.5));
+}
+@keyframes zoomAnim {
+  0%, 100% {transform: scale(1.0);}
+  50% {transform: scale(0.8);}
+}
+@keyframes transition_enfasis {
+
+  0%, 100% {
+      -webkit-filter: drop-shadow(0 0 20px #bf36f6);
+      filter: drop-shadow(0 0 20px #bf36f6);
+      }
+
+  50% {
+      -webkit-filter: drop-shadow(0 0 5px #2c0d38);
+      filter: drop-shadow(0 0 5px #2c0d38);
+      }
+}

@@ -1,0 +1,217 @@
+footer{
+  background: linear-gradient(rgba(9, 15, 22, 0.6), rgba(9, 15, 22, 0.2));
+  border-top: 1px solid rgba(42, 120, 203, 0.12);
+  border-bottom: 1px solid rgba(42, 120, 203, 0.12);
+  /*padding: 22px 28px;*/
+  position: relative;
+  color: var(--cor-9);
+  margin-top: 100px;
+  align-content: center;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.footer h2,
+.footer p {
+  margin-bottom: 40px;
+}
+.info-contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding-right: 20px;
+}
+.info-enlaces {
+  display: grid;
+  /*grid-template-columns: 1fr 2fr;*/
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 30px;
+}
+.info-contacto h3, .info-enlaces h3 {
+  margin-bottom: 18px;
+}
+.info-contacto li, .info-enlaces li{
+  margin-bottom: 24px;
+}
+.info-contacto li > a , .info-enlaces li > a{
+  display: inline-block;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+.info-contacto ul, .info-enlaces ul{
+  margin-bottom: 36px;
+}
+.info-contacto li > a:hover , .info-enlaces li > a:hover{
+  transform: translateY(-2px);
+  color: var(--cor-10);
+}
+.info-contenido, .form-contenido {
+  max-width: 600px;
+}
+.email {
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.email:hover {
+  color: var(--cor-6);
+}
+.copyright-bg {
+  display: block;
+  gap: 40px;
+  justify-content: center;
+  text-align: center;
+}
+.icons-social{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.icons-social img{
+  padding: 10px;
+}
+.scrollup {
+  display: none;
+}
+.scrollup img {
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s;
+
+  right: 20px;
+  bottom: 20px;
+  position: fixed;
+}
+.show-scroll{
+  display: flex;
+}
+.scrollup img:hover {
+  transform: translateY(-10px);
+}
+.last{
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.last a:last-child{
+  margin-left: 0px;
+}
+.last h2{
+  margin-bottom: 15px;
+}
+.copyright{
+  text-align: center;
+  font-size: small;
+}
+
+/*=======================================================================================
+                                      MARK: RESPONSIB
+=======================================================================================*/
+@media (max-width: 1042px) {
+  .form-contenido h2 {
+    font-size: 2.8rem ;
+  }
+}
+@media (max-width: 1000px) {
+  .footer {
+    grid-template-columns: 1fr;
+    padding-right: 30px;
+    padding-left: 30px;
+    gap: 20px;
+  }
+  .info-contenido, .form-contenido {
+    max-width: -webkit-fill-available;
+
+  }
+  .info-contenido p,.info-contenido h2, .info-contenido ul,
+  .info-contenido h3,.form-contenido p,.form-contenido h2 {
+    text-align: center;
+  }
+  .form-contenido h2 {
+    font-size: 3.8rem ;
+  }
+  .copyright-bg {
+    padding-top: 10px;
+    padding-left: 30px;
+    gap: 20px;
+  }
+  .copyright-bg p {
+    font-size: 1rem;
+  }
+  .last-options{
+    margin-bottom: 40px;
+  }
+}
+@media (width < 922px) {
+  .form-contenido h2 {
+    font-size: 2.6rem ;
+  } 
+}
+@media (width < 873px) {
+  .form-contenido h2 {
+    font-size: 2.3rem ;
+  }
+}
+@media (width < 822px) {
+  .form-contenido h2 {
+    font-size: 2.2rem ;
+  }
+}
+@media (width < 809px) {
+  .form-contenido h2 {
+    font-size: 2.1rem ;
+  }
+}
+@media (max-width: 500px) {
+  .info-enlaces {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (width < 624px) {
+  .form-contenido h2 {
+    font-size: 3rem ;
+  }
+}
+@media (width < 504px) {
+  .form-contenido h2 {
+    font-size: 2.9rem ;
+  }
+}
+@media (width < 489px) {
+  .form-contenido h2 {
+    font-size: 2.8rem ;
+  }
+}
+@media (width < 474px) {
+  .form-contenido h2 {
+    font-size: 2.6rem ;
+  }
+}
+@media (width < 445px) {
+  .form-contenido h2 {
+    font-size: 2.4rem ;
+  }
+}
+@media (width < 416px) {
+  .form-contenido h2 {
+    font-size: 2.3rem ;
+  }
+}
+@media (width < 400px) {
+  .form-contenido h2 {
+    font-size: 2.2rem ;
+  }
+}
+@media (width < 486px) {
+  .form-contenido h2 {
+    font-size: 2.1rem ;
+  }
+}

@@ -1,0 +1,84 @@
+
+/*=======================================================================================
+                                      MARK: EFFECTS
+=======================================================================================*/
+.gradient-slow {
+    background: linear-gradient(135deg, 
+        rgb(255, 255, 255) 0%, 
+        rgb(238, 246, 255) 35%,
+        rgb(97, 192, 192) 70%, rgb(91, 213, 213) 100%) text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(rgba(97, 192, 192, 0.35) 0px 0px 32px);
+}      
+.gradient-bold, hr {
+    background: linear-gradient(135deg, 
+        rgb(36, 97, 97) 0%, 
+        rgb(46, 121, 121) 48%,
+        rgb(91, 213, 213) 100%) text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(rgba(36, 97, 97, 0.35) 0px 0px 32px);
+}
+.difuminar {
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 15%,
+    black 85%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 15%,
+    black 85%,
+    transparent
+  );  
+  z-index: 0;
+}
+
+/*=======================================================================================
+                                         MARK: ANIMA
+=======================================================================================*/
+@keyframes flutuar {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes spin {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes reflectLight {
+  0% {
+    left: -250%;
+  }
+  50% {
+    left: 150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+@keyframes reflectLight {
+  0% {
+    left: -250%;
+  }
+  50% {
+    left: 150%;
+  }
+  100% {
+    left: 150%;
+  }
+}

@@ -1,0 +1,88 @@
+.questions {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.questions h2 {
+  margin-bottom: 60px;
+}
+.questions dl > div {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: rgba(250, 250, 250, 0.1); /*var(--cor-0)*/;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+.questions dl > div:hover {
+  transform: scale(1) translateY(-4px);
+}
+.questions dl > div:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.5); /*var(--cor-2)*/;
+}
+.questions button {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+.questions button::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-7);
+}
+.questions button::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 14px;
+  background: url("../../img/icons/seta.svg");
+  transition: transform 0.3s ease-in-out;
+}
+.questions button:hover::after,
+.questions button[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+}
+.questions dd {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding-left: 20px;
+  max-width: 100ch;
+  transition:
+    max-height 0.4s ease,
+    opacity 0.6s ease;
+}
+.questions dd > * {
+  overflow: hidden;
+}
+.questions dd.activa {
+  max-height: 200px;
+  opacity: 1;
+  padding-top: 16px;
+}
+.questions a {
+  transition: color 0.3s;
+}
+.questions a:hover {
+  color: var(--cor-6);
+}
+
+/*=======================================================================================
+                                      MARK: RESPONSIB
+=======================================================================================*/
+@media (max-width: 800px) {
+  .questions {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .questions h2 {
+    margin-bottom: 40px;
+  }
+}

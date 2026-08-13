@@ -1,0 +1,333 @@
+/*=======================================================================================
+                                      MARK: Carrusel[F]
+                                      Features
+=======================================================================================*/
+.carousel-wrapper {
+  width: 100%;
+}
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  animation: spin 15s infinite linear;
+  padding-right: 1em;
+  will-change: transform;
+  min-width: max-content;
+}
+.card {
+  flex: 0 0 6em;
+  height: 120px;
+  padding: 40px 25px;
+  width: 6em;
+  min-width: 6em;
+  position: relative;
+  pointer-events: none;
+  box-sizing: content-box;
+}
+.card img {
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  will-change: transform, opacity;
+}
+.bw {
+  opacity: 1;
+}
+.color {
+  opacity: 0;
+}
+.card img {
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+.card::after {
+  content: attr(data-name);
+  font-family: "Exo2";
+  font-weight: 600;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--cor-10);
+  color: var(--cor-0);
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 1rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.card:hover::after {
+  opacity: 1;
+}
+.card:hover .color {
+  opacity: 1;
+}
+.card:hover img {
+  transform: translate(-50%, calc(-50% - 8px)) scale(1.15);
+}
+
+/*=======================================================================================
+                                      MARK: Carrusel [T]
+                                      Testimonial
+=======================================================================================*/
+.carousel-section {
+  font-family: Arial, sans-serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.carousel {
+  position: relative;
+  width: 600px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  /*background: white;*/
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  align-items: center;
+  width: -webkit-fill-available;
+}
+.carousel-slide {
+  width: 100%;
+  min-width: 95%;
+  padding-left: 10px;
+  margin: -webkit-fill-available;
+}
+.carousel-slide img{
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+}
+.card-baixo p:nth-of-type(4){
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/*=======================================================================================
+                                        MARK: Carrusel [E]
+                                        Exploración
+=======================================================================================*/
+.carousel-explora {
+  position: relative;
+  width:-webkit-fill-available;
+  overflow: hidden;
+  border-radius: 10px;
+  background: transparent;
+}
+.carousel-track-explora {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  padding: 15px;
+  padding-bottom: 30px;
+}
+.carousel-slide-explora {
+  min-width: 320px;
+  margin-right: 10px;
+  user-select: none;
+  flex-shrink: 0;
+  background: var(--color-primary-software);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #666;
+  cursor: pointer;
+  border: var(--color-secondary-software) solid 3px;
+  transition: all 0.1s ease-in-out;
+}
+.carousel-slide-explora:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 0 10px var(--color-primary-software);
+}
+.carousel-slide-explora img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* BOTONES PARA T y E */
+.carousel-button, .carousel-button-explora {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(36, 97, 97, 0.5);
+  border: none;
+  color: var(--cor-10);
+  font-size: 2rem;
+  padding: 0.2rem 0.7rem;
+  cursor: pointer;
+  border-radius: 10%;
+  user-select: none;
+  transition: background 0.3s ease;
+}
+.carousel-button:hover, .carousel-button-explora:hover {
+  background: rgba(0,0,0,0.7);
+}
+.carousel-button.prev, .carousel-button-explora.prevExplora {
+  left: 50px;
+}
+.carousel-button.next, .carousel-button-explora.nextExplora {
+  right: 70px;
+}
+/* Indicadores */
+.carousel-indicators, .carousel-indicators-explora {
+  position: absolute;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  gap: 8px;
+}
+.bottom-explora {
+  bottom: 0;
+  overflow-x: scroll;
+  overflow: auto;
+}
+.carousel-indicator, .carousel-indicator-explora {
+  width: 12px;
+  height: 12px;
+  background: var(--cor-10);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.carousel-indicator.active, .carousel-indicator-explora.active{
+  background: var(--color-primary-software);
+}
+
+/*=======================================================================================
+                                        MARK: MODAL
+=======================================================================================*/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0,0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal.hidden {
+  display: none;
+}
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  background: none;
+  padding: 10px;
+}
+.modal-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  border-radius: 10px;
+  border: var(--color-primary-software) solid 5px;
+  margin: 0 auto;
+  box-shadow: 0 0 30px rgba(36, 97, 97,0.5);
+}
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--cor-11);
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+}
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+  transition: background 0.3s ease;
+  z-index: 1010;
+}
+.modal-nav:hover {
+  background: rgba(0,0,0,0.7);
+}
+.modal-nav.prev {
+  left: 10px;
+}
+.modal-nav.next {
+  right: 10px;
+}
+
+/*=======================================================================================
+                                      MARK: RESPONSIB
+=======================================================================================*/
+@media (hover: hover) and (pointer: fine) {
+  .card {
+    pointer-events: all;
+  }
+}
+@media(width <= 800px){
+  .carousel-slide-explora {
+    min-width: 200px;
+  }
+}
+@media(width <= 758px){
+  .carousel-slide-explora {
+    min-width: 180px;
+  }
+}
+@media(width <= 685px){
+  .carousel-slide-explora {
+    min-width: 150px;
+  }
+}
+@media(width <= 659px){
+  .carousel-slide-explora {
+    min-width: 150px;
+  }
+}
+@media(width < 476px){
+  .carousel-indicator, .carousel-indicator-explora {
+    width: 6px;
+    height: 6px;
+  }
+}
+@media(width < 454px){
+  .carousel-slide-explora {
+    min-width: 220px;
+  }
+}
+@media(width < 394px){
+  .carousel-slide-explora {
+    min-width: 210px;
+  }
+}
+@media(width < 369px){
+  .carousel-slide-explora {
+    min-width: 180px;
+  }
+}

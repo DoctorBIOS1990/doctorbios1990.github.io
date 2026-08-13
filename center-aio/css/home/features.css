@@ -1,0 +1,99 @@
+.features-bg {
+  padding-top: 200px;
+}
+ .explora-bg {
+  padding-top: 60px;
+}
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.features h2 {
+  margin-bottom: 60px;
+}
+.features-container h3 {
+  max-width: 248px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.features-container p:nth-of-type(2) {
+  /*max-width: 277px;*/
+  margin-bottom: 20px;
+}
+.features-card, .features-card p:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+.features-container li {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.features-container ul {
+  margin-bottom: 24px;
+}
+.features-card {
+  background-color: rgba(250,250,250, 0.1);
+  border: var(--cor-5) solid 1px;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.16);
+  transition: transform 0.3s ease-in-out;
+}
+.features-card:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 20px var(--color-primary-software);
+}
+.icon-feature {
+  background-color: var(--color-primary-software);
+  box-shadow: 0px 1px 5px var(--cor-13);
+  border-radius: 8px;
+  padding: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease 0.1s;
+}
+.features-card {
+  transition: 600ms;
+}
+.wofeaturesrk-card-2 {
+  transition: 400ms;
+}
+.features-card-3 {
+  transition: 200ms;
+}
+.explora-bg h2{
+  margin-bottom: 50px;
+
+}
+
+/*=======================================================================================
+                                      MARK: RESPONSIB
+=======================================================================================*/
+@media (max-width: 800px) {
+  .features-bg {
+    padding-top: 40px;
+  }
+  .features-container {
+    grid-template-columns: 1fr;
+  }
+  .features-card {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .features h2 {
+    margin-bottom: 40px;
+  }
+  .features h3 {
+    max-width: 100%;
+  } 
+  .features-container li {
+    justify-content: center;
+    text-align: center;
+  }
+}

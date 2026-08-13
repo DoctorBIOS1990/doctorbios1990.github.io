@@ -1,0 +1,23 @@
+
+/* Global */
+@import "./global/global.css";
+@import "./util/cores.css";
+@import "./util/tipografia.css";
+@import "./util/componentes.css";
+@import "./util/formulario.css";
+@import "./util/glassmorphism.css";
+@import "./util/efects.css";
+
+
+/* Header e Footer  */
+@import "./global/header.css";
+@import "./global/footer.css";
+
+
+/* Home */
+@import "./home/hero.css";
+@import "./home/carrusel.css";
+@import "./home/sobre.css";
+@import "./home/features.css";
+@import "./home/questions.css";
+@import "./home/testimonial.css";

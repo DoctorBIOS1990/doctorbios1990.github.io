@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://deskfixall,github.io/sitemaps.xml
+Sitemap: https://doctorbios1990.github.io/sitemap.xml

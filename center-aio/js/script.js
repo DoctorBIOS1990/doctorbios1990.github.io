@@ -26,10 +26,6 @@ window.addEventListener("scroll", () => {
     scrollUp.classList.remove('show-scroll');   
 });
 
-scrollUp.addEventListener('click', () => {
-    window.location.href = "#";
-});
-
 /*======================================================================================
                                   MARK: SIDEBAR
 ======================================================================================*/
@@ -218,7 +214,7 @@ function updateCarouselExplora(index) {
   }
 
   const slideWidth = slidesExplora[0].getBoundingClientRect().width + 10;
-  const amountToMove = -index * slideWidth;
+  const amountToMove = - index * slideWidth;
   trackExplora.style.transform = `translateX(${amountToMove}px)`;
 
   updateIndicators(index);
@@ -236,12 +232,12 @@ nextButtonExplora.addEventListener('click', () => {
   updateCarouselExplora(currentIndexExplora + 1);
 });
 
-
 /*======================================================================================
                                   MARK: DRAG 
                                   CARRUSEL
 ======================================================================================*/
 // Flags
+/*
 let isDragging = false;
 
 let startX = 0;

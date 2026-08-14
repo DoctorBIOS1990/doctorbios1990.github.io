@@ -10,11 +10,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100dvh;
   overflow-x: hidden;
-}
-html {
-  overflow-y: hidden;
-}
-body {
   overflow-y: hidden;
 }
 html.is-ready,
@@ -64,19 +59,6 @@ body.loaded .page-loader {
   color: rgba(255, 255, 255, 0.72);
   letter-spacing: 1px;
   animation: loader-pulse 1.5s ease-in-out infinite;
-}
-@keyframes loader-spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes loader-pulse {
-  0%, 100% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 1;
-  }
 }
 h1,
 h2,

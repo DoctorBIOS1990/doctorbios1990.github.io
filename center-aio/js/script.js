@@ -1,4 +1,17 @@
 /*======================================================================================
+                                  MARK: Spinner
+======================================================================================*/
+document.addEventListener('DOMContentLoaded', () => {
+  document.documentElement.classList.add('is-ready');
+  document.body.classList.add('is-ready');
+
+  setTimeout(() => {
+    const loader = document.getElementById('page-loader');
+    if (loader) loader.remove();
+  }, 250);
+});
+
+/*======================================================================================
                                   MARK: Scroll
 ======================================================================================*/
 const scrollUp = document.querySelector('.scrollup');
@@ -224,7 +237,9 @@ nextButtonExplora.addEventListener('click', () => {
                                   MARK: DRAG 
                                   CARRUSEL
 ======================================================================================*/
+// Flags
 let isDragging = false;
+
 let startX = 0;
 let currentTranslate = 0;  // Valor actual de traslación
 let prevTranslate = 0;     // Valor previo de traslación antes de drag
@@ -280,15 +295,13 @@ function finishDrag() {
 
   // Calcular índice basado en la posición final al soltar
   let newIndex = translateToIndex(currentTranslate);
-
   updateCarousel(newIndex);
 }
 
 trackExplora.addEventListener('mouseup', finishDrag);
 trackExplora.addEventListener('mouseleave', finishDrag);
 
-// Soporte touch para móviles (opcional pero recomendado)
-
+// Soporte touch para Mobile
 trackExplora.addEventListener('touchstart', e => {
   isDragging = true;
   startX = e.touches[0].pageX;
@@ -437,7 +450,7 @@ modal.addEventListener('click', (e) => {
   }
 });
 
-// Añadir evento click a cada imagen para abrir modal
+// Evento doble click a cada imagen para abrir modal
 slidesExplora.forEach(slide => {
   const img = slide.querySelector('img');
   slide.addEventListener('click', () => {

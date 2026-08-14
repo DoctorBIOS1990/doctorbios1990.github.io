@@ -121,6 +121,9 @@ img [src$=".jpg"] {
 .hide{
   display: none;
 }
+.show-display{
+  display: flex !important;
+}
 @media (prefers-reduced-motion) {
   .hidden {
     transition: none;

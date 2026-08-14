@@ -7,7 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setTimeout(() => {
     const loader = document.getElementById('page-loader');
-    if (loader) loader.remove();
+    const header = document.querySelector('.header');
+    if (loader) {
+      header.classList.add('show-display');
+      loader.remove();
+    };
   }, 250);
 });
 

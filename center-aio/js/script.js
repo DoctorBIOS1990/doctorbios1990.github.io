@@ -171,6 +171,7 @@ let visibleSlides = 3;
 const totalSlides = slidesExplora.length;
 let currentIndexExplora = 1;
 let dragDistance = 0; // Detectar movimiento real durante drag
+let dragMoved = false; // Evitar click después de drag móvil
 
 // Detectar width
 checkWidthClient  = () => {
@@ -250,13 +251,13 @@ let animationID = 0;
 
 // Convertir índice actual a la posición en píxeles de translateX
 function indexToTranslate(index) {
-  const slideWidth = slides[0].getBoundingClientRect().width + 10;
+  const slideWidth = slidesExplora[0].getBoundingClientRect().width + 10;
   return - index * slideWidth;
 }
 
 // Convertir translateX a índice aproximado
 function translateToIndex(translate) {
-  const slideWidth = slides[0].getBoundingClientRect().width + 10;
+  const slideWidth = slidesExplora[0].getBoundingClientRect().width + 10;
   return Math.round(-translate / slideWidth);
 }
 
@@ -268,9 +269,10 @@ function animate() {
 // Evento mousedown - inicio drag
 trackExplora.addEventListener('mousedown', e => {
   isDragging = true;
+  dragMoved = false;
   startX = e.pageX;
   dragDistance = 0; // Reiniciar distancia de drag
-  prevTranslate = currentTranslate || indexToTranslate(currentIndex);
+  prevTranslate = currentTranslate || indexToTranslate(currentIndexExplora);
   trackExplora.style.transition = 'none';
   animationID = requestAnimationFrame(animate);
   // Evitar selección de texto/imagen durante arrastre
@@ -282,6 +284,9 @@ trackExplora.addEventListener('mousemove', e => {
   if (!isDragging) return;
   const deltaX = e.pageX - startX;
   dragDistance = Math.abs(deltaX); // Registrar distancia del movimiento
+  if (dragDistance > 8) {
+    dragMoved = true;
+  }
   currentTranslate = prevTranslate + deltaX;
 });
 
@@ -300,6 +305,10 @@ function finishDrag() {
 
   // Calcular índice basado en la posición final al soltar
   let newIndex = translateToIndex(currentTranslate);
+
+  if (Math.abs(currentTranslate - prevTranslate) > 12) {
+    dragMoved = true;
+  }
   
   // Agregar transición suave después del drag
   trackExplora.style.transition = 'transform 0.5s ease-in-out';
@@ -312,9 +321,10 @@ trackExplora.addEventListener('mouseleave', finishDrag);
 // Soporte touch para Mobile
 trackExplora.addEventListener('touchstart', e => {
   isDragging = true;
+  dragMoved = false;
   startX = e.touches[0].pageX;
   dragDistance = 0; // Reiniciar distancia de drag
-  prevTranslate = currentTranslate || indexToTranslate(currentIndex);
+  prevTranslate = currentTranslate || indexToTranslate(currentIndexExplora);
   trackExplora.style.transition = 'none';
   animationID = requestAnimationFrame(animate);
 });
@@ -323,6 +333,9 @@ trackExplora.addEventListener('touchmove', e => {
   if (!isDragging) return;
   const deltaX = e.touches[0].pageX - startX;
   dragDistance = Math.abs(deltaX); // Registrar distancia del movimiento
+  if (dragDistance > 8) {
+    dragMoved = true;
+  }
   currentTranslate = prevTranslate + deltaX;
 });
 
@@ -463,12 +476,18 @@ modal.addEventListener('click', (e) => {
 // Evento doble click a cada imagen para abrir modal
 slidesExplora.forEach(slide => {
   const img = slide.querySelector('img');
-  slide.addEventListener('click', () => {
-    // Solo abrir modal si NO hubo movimiento significativo durante drag (>5px)
-    if (dragDistance < 5) {
-      showImageModal(img);
+  slide.addEventListener('click', (event) => {
+    if (dragMoved || dragDistance > 8) {
+      event.preventDefault();
+      event.stopPropagation();
+      dragMoved = false;
+      dragDistance = 0;
+      return;
     }
-    dragDistance = 0; // Reiniciar después de click
+
+    showImageModal(img);
+    dragMoved = false;
+    dragDistance = 0;
   });
 });
 

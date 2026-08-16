@@ -143,3 +143,12 @@ img [src$=".jpg"] {
     padding-top: 50px;
   }
 }
+/* Evitar selección Carrusel [S] */
+.carousel-slide-explora, .carousel-slide-explora img {
+  user-select: none;           /* Para navegadores modernos */
+  -webkit-user-select: none;   /* Safari/Chrome */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  -webkit-tap-highlight-color: transparent; /*highlight azul en iOS */
+  tap-highlight-color: transparent;
+}

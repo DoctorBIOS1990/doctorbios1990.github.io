@@ -67,7 +67,6 @@
 }
 .explora-bg h2{
   margin-bottom: 50px;
-
 }
 
 /*=======================================================================================
@@ -81,9 +80,9 @@
     grid-template-columns: 1fr;
   }
   .features-card {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    align-content: center;
-    justify-content: center;
     text-align: center;
   }
   .features h2 {
@@ -91,9 +90,5 @@
   }
   .features h3 {
     max-width: 100%;
-  } 
-  .features-container li {
-    justify-content: center;
-    text-align: center;
   }
 }

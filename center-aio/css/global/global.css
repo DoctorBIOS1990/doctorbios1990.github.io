@@ -11,6 +11,7 @@ body {
   min-height: 100dvh;
   overflow-x: hidden;
   overflow-y: hidden;
+  background-color: var(--cor-1);
 }
 html.is-ready,
 body.is-ready {

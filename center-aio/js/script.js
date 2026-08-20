@@ -115,6 +115,45 @@ function eventosQuestions(question) {
 questions.forEach(eventosQuestions);
 
 /*======================================================================================
+                                  MARK: PRICE
+======================================================================================*/
+const billingToggle = document.querySelector('#billing-toggle');
+const priceAmount = document.querySelector('.price-amount');
+const priceSaving = document.querySelector('.price-savings');
+const pricePeriodLabels = document.querySelectorAll('.price-period-label');
+const submitPrice = document.querySelector('.submit-price');
+
+if (billingToggle && priceAmount) {
+  billingToggle.addEventListener('change', () => {
+    const isYearly = billingToggle.checked;
+
+    // Text Variable
+    priceAmount.innerHTML = isYearly ? '$54,0000 CUP/<sub>año</sub>' : '$5,000 CUP/<sub>mes</sub>';
+    
+    // Add comment price
+    priceSaving.innerHTML = isYearly ? 
+    `<span class="keyword">💰 Ahorra 10%</span></br></br> 
+     <span class="line-through">60,000 CUP</span> 
+     <span class="cor-15">Ahorras 6,000 CUP</span></br> 
+     <span>Equivale a 4,500 CUP/mes</span>` : '';
+    
+    pricePeriodLabels.forEach((label) => {
+      label.classList.toggle('is-active', label.dataset.periodLabel === (isYearly ? 'yearly' : 'monthly'));
+    });
+    billingToggle.setAttribute('aria-label', isYearly ? 'Cambiar a facturación mensual' : 'Cambiar a facturación anual');
+  });
+}
+submitPrice.addEventListener('click', ()=>{
+  const isYearly = billingToggle.checked;
+  const selectedPlan = isYearly ? 'anual' : 'mensual';
+  const text = `Hola he accedido a la web oficial de Center AIO Pro y estoy interesado en el plan ${selectedPlan}`
+  const user = `tg://resolve?domain=doctorbios&text=${text}`;
+
+  window.open(user, '_blank');
+
+});
+
+/*======================================================================================
                                   MARK: Carrusel [T]  
                                   Testimonios 
 ======================================================================================*/

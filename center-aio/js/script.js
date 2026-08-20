@@ -423,7 +423,7 @@ submit_telegram.addEventListener('click', () => {
 // Check fields
 checkInput = (input, label) => {
     if (input.value === ''){
-        label.innerText = 'Campo requerido.';
+        label.innerText = '[ ✋🏻 Campo requerido ]';
         return; 
     }
     return true; 
@@ -434,11 +434,11 @@ checkEmail = (email, label) => {
     const emailRegex = /^[a-zA-Z0-9._-]+@[^,s@]+.[a-zA-Z]{2,}$/;
 
     if (email.value.trim() === ''){
-        label.innerText = 'Campo requerido.';
+        label.innerText = '[ ✋🏻 Campo requerido ]';
         return;
     }
     if (!emailRegex.test(email.value)) {
-        label.innerText = 'Correo incorrecto.';
+        label.innerText = '[ ❌ Correo incorrecto ]';
         return;
     } 
     removeDanger(email);
@@ -448,17 +448,17 @@ checkEmail = (email, label) => {
 
 // Remove all danger borders
 fullname.addEventListener('input', () => {
-    name_label.innerText = 'Nombre';
+    name_label.innerText = 'Nombre: [*]';
     removeDanger(fullname);
     removeDanger(name_label);
 });
 email.addEventListener('input', () => {
-    email_label.innerText = 'Email';
+    email_label.innerText = 'Email: [*]';
     removeDanger(email);
     removeDanger(email_label);
 });
 message.addEventListener('input', () => {
-    message_label.innerText = 'Mensaje';
+    message_label.innerText = 'Mensaje: [*]';
     removeDanger(message);
     removeDanger(message_label);
 });

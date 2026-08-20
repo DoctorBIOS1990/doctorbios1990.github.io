@@ -18,6 +18,7 @@
   --card-cima-bg: #1a1a1a;
   --color-primary-software: rgb(36, 97, 97);
   --color-secondary-software: rgb(25, 63, 63);
+  --color-success: #22c55e;
 }
 
 /*=======================================================================================
@@ -67,4 +68,7 @@
 }
 .cor-14 {
   color: var(--color-secondary-software);
+}
+.cor-15 {
+  color: var(--color-success);
 }

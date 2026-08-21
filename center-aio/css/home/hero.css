@@ -3,7 +3,7 @@
 }
 .hero {
   gap: 0px 50px;
-  padding-top: 100px;
+  padding-top: 80px;
   display: grid;
   grid-template-columns: 6fr 5fr;
   justify-content: center;

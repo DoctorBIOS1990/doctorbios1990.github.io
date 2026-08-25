@@ -15,7 +15,7 @@
   will-change: transform;
   min-width: max-content;
 }
-.card {
+.item {
   flex: 0 0 6em;
   height: 120px;
   padding: 40px 25px;
@@ -25,7 +25,7 @@
   pointer-events: none;
   box-sizing: content-box;
 }
-.card img {
+.item img {
   width: 80px;
   position: absolute;
   top: 50%;
@@ -39,12 +39,12 @@
 .color {
   opacity: 0;
 }
-.card img {
+.item img {
   transition:
     transform 0.3s ease,
     opacity 0.3s ease;
 }
-.card::after {
+.item::after {
   content: attr(data-name);
   font-family: "Exo2";
   font-weight: 600;
@@ -62,13 +62,13 @@
   pointer-events: none;
   transition: opacity 0.2s ease;
 }
-.card:hover::after {
+.item:hover::after{
   opacity: 1;
 }
-.card:hover .color {
+.item:hover .color{
   opacity: 1;
 }
-.card:hover img {
+.item:hover img {
   transform: translate(-50%, calc(-50% - 8px)) scale(1.15);
 }
 
@@ -83,6 +83,7 @@
   align-items: center;
   height: 100vh;
   margin: 0;
+
 }
 .carousel {
   position: relative;
@@ -108,10 +109,6 @@
   width: 100%;
   display: block;
   border-radius: 50%;
-}
-.card-baixo p:nth-of-type(4){
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 /*=======================================================================================
@@ -147,8 +144,13 @@
   cursor: pointer;
   border: var(--color-secondary-software) solid 3px;
   transition: all 0.1s ease-in-out;
+  user-select: none;
 }
 .carousel-slide-explora:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 0 10px var(--color-primary-software);
+}
+.hover {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 0 10px var(--color-primary-software);
 }
@@ -157,6 +159,7 @@
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
+  user-select: none;
 }
 
 /* BOTONES PARA T y E */
@@ -286,7 +289,7 @@
                                       MARK: RESPONSIB
 =======================================================================================*/
 @media (hover: hover) and (pointer: fine) {
-  .card {
+  .item {
     pointer-events: all;
   }
 }

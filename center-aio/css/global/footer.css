@@ -5,7 +5,7 @@ footer{
   /*padding: 22px 28px;*/
   position: relative;
   color: var(--cor-9);
-  margin-top: 100px;
+  margin-top: 150px;
   align-content: center;
 }
 .footer {
@@ -85,7 +85,6 @@ footer{
   width: 30px;
   height: 30px;
   transition: all 0.3s;
-
   right: 20px;
   bottom: 20px;
   position: fixed;

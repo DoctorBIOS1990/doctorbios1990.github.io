@@ -19,6 +19,8 @@
   --color-primary-software: rgb(36, 97, 97);
   --color-secondary-software: rgb(25, 63, 63);
   --color-success: #22c55e;
+  --color-shadow: #5bd5d5;
+  --color-danger: red;
 }
 
 /*=======================================================================================

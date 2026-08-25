@@ -1,8 +1,5 @@
-.features-bg {
-  padding-top: 200px;
-}
- .explora-bg {
-  padding-top: 60px;
+.features-bg, .explora-bg {
+  padding-top: 100px;
 }
 .features-container {
   display: grid;
@@ -90,5 +87,8 @@
   }
   .features h3 {
     max-width: 100%;
+  }
+  #price {
+    padding: 60px 0;
   }
 }

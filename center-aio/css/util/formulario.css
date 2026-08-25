@@ -64,14 +64,14 @@ textarea{
 }
 .submit-telegram:hover{
   background: #144c68;
-  box-shadow: 0px 0px 20px var(--color-primary-software);
+  box-shadow: 0px 0px 10px var(--color-shadow);
   cursor: pointer;
 }
 .dangerInput{
-  border:red 2px solid !important;
+  border: var(--color-danger) 2px solid !important;
 }
 .dangerLabel{
-  color:red !important;
+  color: var(--color-danger) !important;
 }
 
 /*=======================================================================================

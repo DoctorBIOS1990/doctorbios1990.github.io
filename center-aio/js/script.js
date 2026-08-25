@@ -200,6 +200,7 @@ indicators.forEach((indicator, i) => {
                                   MARK: Carrusel [S]
                                   Exploracion Screenshots 
 ======================================================================================*/
+
 const carousel = document.querySelector('.carousel-explora');
 const trackExplora = document.querySelector('.carousel-track-explora');
 const slidesExplora = Array.from(trackExplora.children);
@@ -260,6 +261,7 @@ function updateCarouselExplora(index) {
 
   updateIndicators(index);
   currentIndexExplora = index;
+  currentTranslate = amountToMove;
 }
 
 // Boton Prev
@@ -311,7 +313,7 @@ trackExplora.addEventListener('mousedown', e => {
   dragMoved = false;
   startX = e.pageX;
   dragDistance = 0; // Reiniciar distancia de drag
-  prevTranslate = currentTranslate || indexToTranslate(currentIndexExplora);
+  prevTranslate = indexToTranslate(currentIndexExplora);
   trackExplora.style.transition = 'none';
   animationID = requestAnimationFrame(animate);
   // Evitar selección de texto/imagen durante arrastre
@@ -363,7 +365,7 @@ trackExplora.addEventListener('touchstart', e => {
   dragMoved = false;
   startX = e.touches[0].pageX;
   dragDistance = 0; // Reiniciar distancia de drag
-  prevTranslate = currentTranslate || indexToTranslate(currentIndexExplora);
+  prevTranslate = indexToTranslate(currentIndexExplora);
   trackExplora.style.transition = 'none';
   animationID = requestAnimationFrame(animate);
 });
@@ -380,6 +382,7 @@ trackExplora.addEventListener('touchmove', e => {
 
 trackExplora.addEventListener('touchend', finishDrag);
 trackExplora.addEventListener('touchcancel', finishDrag);
+
 
 /*======================================================================================
                                   MARK: CONTACT

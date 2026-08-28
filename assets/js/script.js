@@ -1,4 +1,6 @@
-//according to loftblog tut
+/*======================================================================================================
+                                        According to loftblog tut
+======================================================================================================*/
 $(".main-menu li:first").addClass("active");
 
 const showSection = (section, isAnimate) => {
@@ -46,10 +48,11 @@ $(".main-menu").on("click", "a", function(e) {
 $(window).scroll(function() {
   checkSection();
 });
-
-
-// Typewriter
-const words = ["Backend Developer.","Web Developer.", "App Developer."];
+ 
+/*======================================================================================================
+                                            MARK: Typewriter
+======================================================================================================*/
+const words = ["🚀FullStack Developer.", "🎯Product Builder.", "🌐Web Design.", "💻Desktop Developer."];
 const text = document.querySelector('.skills-services');
 
 i = 0, j = 0, del = false;
@@ -67,7 +70,9 @@ function type(){
 }
 type();
 
-// Redirect Social Links
+/*======================================================================================================
+                                            MARK: Social Links
+======================================================================================================*/
 const telegram = document.getElementById('telegram');
 const linkedin = document.getElementById('linkedin');
 const github = document.getElementById('github');
@@ -88,8 +93,9 @@ links.forEach(([element, url]) => {
   }
 });
 
-
-// Telegram
+/*======================================================================================================
+                                            MARK: Telegram
+======================================================================================================*/
 const submit_telegram = document.getElementById('form-submit');
 
 // Form objects
@@ -181,8 +187,9 @@ applyDangerInput = (input) => input.classList.add('dangerInput');
 applyDangerLabel = (label) => label.classList.add('dangerLabel');
 
 
-
-// CV Dropdown
+/*======================================================================================================
+                                            MARK: CV Dropdown
+======================================================================================================*/
 const dropdownBtn = document.getElementById('dropdownBtn');
 const dropdownContent = document.getElementById('dropdownContent');
 

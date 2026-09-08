@@ -1,25 +1,47 @@
 .price-bg {
   padding: 100px 0;
+    background: url(./../../img/price-back.svg) center center no-repeat;
+  background-size: contain;
 }
 .price-container {
   display: grid;
   gap: 40px;
   flex-wrap: wrap;
-  grid-template-columns: minmax(280px, 420px);
-  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  justify-items: center;
+  max-width: 700px;
+}
+.price-contenido {
+  padding-top: 20px;
+  align-self: center;
+  background: url(./../../img/fotos/baraja2.png) bottom center no-repeat;
+  background-size: contain;
+  mask-image: linear-gradient(#fff 80%, transparent);
+}
+.price-contenido p {
+  margin-bottom: 32px;
 }
 .price-card {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.1);;
-  border: var(--cor-5) solid 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: var(--cor-7) solid 1px;
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0px 0px 20px var(--color-primary-software);
 }
-.price-card .icon-feature{
+.icon-suscription {
+  box-shadow: 0px 1px 5px var(--cor-13);
+  border-radius: 8px;
+  padding: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease 0.1s;
   border: var(--cor-10) 2px solid;
   box-shadow: 0px 0px 10px var(--color-shadow);
   background: linear-gradient(180deg, var(--color-primary-software), var(--color-secondary-software));
+  font-size: x-large;
 }
 .price h2 {
   margin-bottom: 50px;
@@ -36,7 +58,7 @@
 .price-card p:nth-of-type(2) {
   margin-bottom: 20px;
 }
-.price-card, .price-card p:nth-of-type(1) {
+.price-card p:nth-of-type(1) {
   margin-bottom: 20px;
 }
 .price-switcher {
@@ -120,7 +142,6 @@
   letter-spacing: 1px;
   color:#fff;
   background: var(--color-secondary-software);
-  width: 100%;
   text-align: center;
   align-content: center;
   place-content: center;
@@ -131,4 +152,14 @@
   background: var(--color-primary-software);
   box-shadow: 0px 0px 10px var(--color-shadow);
   cursor: pointer;
+}
+
+/*=======================================================================================
+                                      MARK: RESPONSIB
+=======================================================================================*/
+@media (width < 650px) {
+  .price-container{
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }

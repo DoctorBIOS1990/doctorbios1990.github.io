@@ -70,9 +70,6 @@
                                       MARK: RESPONSIB
 =======================================================================================*/
 @media (max-width: 1200px) {
-  .sobre-bg {
-    padding-top: 40px;
-  }
   .sobre-conteudo::before,
   .sobre::before {
     display: none;

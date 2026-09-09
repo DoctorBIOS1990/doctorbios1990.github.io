@@ -49,7 +49,7 @@ footer{
   transform: translateY(-2px);
   color: var(--cor-10);
 }
-.info-contenido{
+.footer-right{
   max-width: 600px;
 }
 .footer-left {
@@ -113,15 +113,21 @@ footer{
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
-  text-align: center;
+  text-align: left;
   transition: all 0.3s ease-in-out;
   margin-bottom: 20px;
   margin-top: 20px;
   border-left: 5px solid #ccc;
-  max-width: 350px;
+  max-width: 400px;
 }
 .comment p{
+  display: flex;
   margin-left: 10px;
+}
+.comment p img{
+  margin-left: 20px;
+  margin-right: 10px;
+  object-fit: contain;
 }
 .footer-logo{
   align-items: center;
@@ -149,14 +155,14 @@ footer{
     padding-left: 30px;
     gap: 20px;
   }
-  .info-contenido, .footer-left {
+  .footer-right, .footer-left {
     max-width: -webkit-fill-available;
   }
-  .info-contenido{
+  .footer-right{
     margin-top: 20px;
   }
-  .info-contenido p,.info-contenido h2, .info-contenido ul,
-  .info-contenido h3,.footer-left p,.footer-left h2 {
+  .footer-right p,.footer-right h2, .footer-right ul,
+  .footer-right h3,.footer-left h2 {
     text-align: center;
   }
   .footer-left h2 {

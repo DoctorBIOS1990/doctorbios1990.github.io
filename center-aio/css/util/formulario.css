@@ -3,6 +3,10 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+ .form-contenido {
+  max-width: 600px;
+}
+
 .form input {
   color: var(--cor-10);
 }
@@ -87,5 +91,81 @@ textarea{
   }
   .form .col-2 {
     grid-column: 1;
+  }
+}
+@media (max-width: 1042px) {
+  .form-contenido h2 {
+    font-size: 2.8rem ;
+  }
+}
+@media (max-width: 1000px) {
+  .form-contenido {
+    max-width: -webkit-fill-available;
+  }
+  .form-contenido p,.form-contenido h2 {
+    text-align: center;
+  }
+  .form-contenido h2 {
+    font-size: 3.8rem ;
+  }
+}
+@media (width < 922px) {
+  .form-contenido h2 {
+    font-size: 2.6rem ;
+  } 
+}
+@media (width < 873px) {
+  .form-contenido h2 {
+    font-size: 2.3rem ;
+  }
+}
+@media (width < 822px) {
+  .form-contenido h2 {
+    font-size: 2.2rem ;
+  }
+}
+@media (width < 809px) {
+  .form-contenido h2 {
+    font-size: 2.1rem ;
+  }
+}
+@media (width < 624px) {
+  .form-contenido h2 {
+    font-size: 3rem ;
+  }
+}
+@media (width < 504px) {
+  .form-contenido h2 {
+    font-size: 2.9rem ;
+  }
+}
+@media (width < 489px) {
+  .form-contenido h2 {
+    font-size: 2.8rem ;
+  }
+}
+@media (width < 474px) {
+  .form-contenido h2 {
+    font-size: 2.6rem ;
+  }
+}
+@media (width < 445px) {
+  .form-contenido h2 {
+    font-size: 2.4rem ;
+  }
+}
+@media (width < 416px) {
+  .form-contenido h2 {
+    font-size: 2.3rem ;
+  }
+}
+@media (width < 400px) {
+  .form-contenido h2 {
+    font-size: 2.2rem ;
+  }
+}
+@media (width < 486px) {
+  .form-contenido h2 {
+    font-size: 2.1rem ;
   }
 }

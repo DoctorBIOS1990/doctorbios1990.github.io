@@ -26,8 +26,8 @@ footer{
 .info-enlaces {
   display: grid;
   /*grid-template-columns: 1fr 2fr;*/
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  /*align-items: center;*/
   gap: 30px;
 }
 .info-contacto h3, .info-enlaces h3 {
@@ -49,7 +49,10 @@ footer{
   transform: translateY(-2px);
   color: var(--cor-10);
 }
-.info-contenido, .form-contenido {
+.info-contenido{
+  max-width: 600px;
+}
+.footer-left {
   max-width: 600px;
 }
 .email {
@@ -61,7 +64,6 @@ footer{
 }
 .copyright-bg {
   display: block;
-  gap: 40px;
   justify-content: center;
   text-align: center;
 }
@@ -69,7 +71,6 @@ footer{
   display: flex;
   text-align: center;
   justify-content: center;
-  padding-bottom: 20px;
 }
 .icons-social i{
   padding: 10px;
@@ -119,14 +120,15 @@ footer{
   border-left: 5px solid #ccc;
   max-width: 350px;
 }
+.comment p{
+  margin-left: 10px;
+}
 .footer-logo{
   align-items: center;
 }
 .footer-keywords{
   padding: 20px;
 }
-
-
 /*=======================================================================================
                                       MARK: RESPONSIB
 =======================================================================================*/
@@ -136,7 +138,7 @@ footer{
   }*/
 }
 @media (max-width: 1042px) {
-  .form-contenido h2 {
+  .footer-left h2 {
     font-size: 2.8rem ;
   }
 }
@@ -147,22 +149,21 @@ footer{
     padding-left: 30px;
     gap: 20px;
   }
-  .info-contenido, .form-contenido {
+  .info-contenido, .footer-left {
     max-width: -webkit-fill-available;
   }
   .info-contenido{
     margin-top: 20px;
   }
   .info-contenido p,.info-contenido h2, .info-contenido ul,
-  .info-contenido h3,.form-contenido p,.form-contenido h2 {
+  .info-contenido h3,.footer-left p,.footer-left h2 {
     text-align: center;
   }
-  .form-contenido h2 {
+  .footer-left h2 {
     font-size: 3.8rem ;
   }
   .copyright-bg {
     padding-top: 10px;
-    padding-left: 30px;
     gap: 20px;
   }
   .copyright-bg p {
@@ -173,22 +174,22 @@ footer{
   }
 }
 @media (width < 922px) {
-  .form-contenido h2 {
+  .footer-left h2 {
     font-size: 2.6rem ;
   } 
 }
 @media (width < 873px) {
-  .form-contenido h2 {
+  .footer-left h2 {
     font-size: 2.3rem ;
   }
 }
 @media (width < 822px) {
-  .form-contenido h2 {
+  .footer-left h2 {
     font-size: 2.2rem ;
   }
 }
 @media (width < 809px) {
-  .form-contenido h2 {
+  .footer-left h2 {
     font-size: 2.1rem ;
   }
 }
@@ -198,42 +199,42 @@ footer{
   }
 }
 @media (width < 624px) {
-  .form-contenido h2 {
+  .footer-left h2 {
     font-size: 3rem ;
   }
 }
 @media (width < 504px) {
-  .form-contenido h2 {
+  .footer-left h2 {
     font-size: 2.9rem ;
   }
 }
 @media (width < 489px) {
-  .form-contenido h2 {
+  .footer-left h2 {
     font-size: 2.8rem ;
   }
 }
 @media (width < 474px) {
-  .form-contenido h2 {
+  .footer-left h2 {
     font-size: 2.6rem ;
   }
 }
 @media (width < 445px) {
-  .form-contenido h2 {
+  .footer-left h2 {
     font-size: 2.4rem ;
   }
 }
 @media (width < 416px) {
-  .form-contenido h2 {
+  .footer-left h2 {
     font-size: 2.3rem ;
   }
 }
 @media (width < 400px) {
-  .form-contenido h2 {
+  .footer-left h2 {
     font-size: 2.2rem ;
   }
 }
 @media (width < 486px) {
-  .form-contenido h2 {
+  .footer-left h2 {
     font-size: 2.1rem ;
   }
 }

@@ -1,6 +1,6 @@
 .price-bg {
   padding: 100px 0;
-    background: url(./../../img/price-back.svg) center center no-repeat;
+  background: url(./../../img/price-back.svg) center center no-repeat;
   background-size: contain;
 }
 .price-container {
@@ -26,9 +26,25 @@
   text-align: center;
   background-color: rgba(0, 0, 0, 0.1);
   border: var(--cor-7) solid 1px;
+  border-top: var(--cor-7) 5px solid;
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0px 0px 20px var(--color-primary-software);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.16);
+  transition: all 0.3s ease-in-out;
+}
+.price-card:hover {
+  box-shadow: 0px 0px 20px var(--color-primary-software);
+}
+.gold {
+  border: var(--color-gold) solid 1px;
+  background-color: rgba(240, 240, 240, 0.1);
+  border-top: var(--color-gold) 5px solid;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.16);
+  transition: all 0.3s ease-in-out;
+}
+.gold:hover {
+  box-shadow: 0px 0px 20px var(--color-gold);
 }
 .icon-suscription {
   box-shadow: 0px 1px 5px var(--cor-13);
@@ -42,6 +58,10 @@
   box-shadow: 0px 0px 10px var(--color-shadow);
   background: linear-gradient(180deg, var(--color-primary-software), var(--color-secondary-software));
   font-size: x-large;
+}
+.icon-gold {
+  box-shadow: 0px 1px 5px var(--color-gold);
+  background: var(--color-gradient-gold);
 }
 .price h2 {
   margin-bottom: 50px;
@@ -152,6 +172,13 @@
   background: var(--color-primary-software);
   box-shadow: 0px 0px 10px var(--color-shadow);
   cursor: pointer;
+}
+.btn-gold{
+  background: #be8837;
+}
+.btn-gold:hover{
+  background: #9a6e2c;
+  box-shadow: 0px 0px 10px var(--color-gold);
 }
 
 /*=======================================================================================

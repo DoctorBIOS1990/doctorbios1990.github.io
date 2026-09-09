@@ -18,6 +18,14 @@
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(rgba(36, 97, 97, 0.35) 0px 0px 32px);
 }
+.gradient-gold, hr {
+    background: linear-gradient(135deg, 
+        rgb(190, 136, 55) 0%, 
+        rgb(255, 184, 77) 48%,
+        rgb(255, 215, 0) 100%) text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(rgba(36, 97, 97, 0.35) 0px 0px 32px);
+}
 .difuminar {
   width: 100%;
   display: flex;
@@ -94,4 +102,15 @@
   50% {
     opacity: 1;
   }
+}
+
+.card-3d {
+    transform-style: preserve-3d;
+    transition: transform .4s cubic-bezier(.34,1.56,.64,1),box-shadow .4s ease;
+    will-change: transform;
+}
+
+.card-3d:hover {
+    transform: perspective(800px) rotateX(4deg) rotateY(-4deg) translateZ(8px);
+    box-shadow: 0 20px 60px #00000080, 0 0 30px #39b54a26, inset 0 1px #ffffff1f;
 }

@@ -146,6 +146,87 @@
   padding-right: 40px;
 }
 
+
+/* DOCUMENTATION */
+.documentation dl > div {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: rgba(250, 250, 250, 0.1); /*var(--cor-0)*/;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+.documentation dl > div:hover  {
+  transform: scale(1) translateY(-4px);
+}
+.documentation dl > div:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.5); /*var(--cor-2)*/;
+}
+.documentation button {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+.documentation button::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-7);
+}
+.documentation button::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 14px;
+  background: url("../../img/icons/seta.svg");
+  transition: transform 0.3s ease-in-out;
+}
+.documentation button:hover::after,
+.documentation button[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+}
+.documentation dd {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding-left: 20px;
+  transition:
+    max-height 0.4s ease,
+    opacity 0.6s ease;
+}
+.documentation dd > *  {
+  overflow: hidden;
+}
+.documentation dd.activa {
+  max-height: 400px;
+  opacity: 1;
+  padding-top: 16px;
+}
+.documentation a {
+  transition: color 0.3s;
+}
+.documentation a:hover {
+  color: var(--cor-6);
+}
+.burble {
+    border: 1px solid var(--border);
+    color: var(--light4);
+    letter-spacing: .02em;
+    background: #0d182499;
+    border-radius: 999px;
+    /*margin-top: 18px;*/
+    padding: 6px 14px;
+    font-size: 12px;
+    /*display: inline-block;*/
+    color: var(--cor-10);
+}
 /*=======================================================================================
                                       MARK: RESPONSIB
 =======================================================================================*/

@@ -1,0 +1,21 @@
+.privacy-bg {
+  padding: 100px 0;
+}
+.privacy {
+  padding-top: 120px;
+}
+.privacy h2 {
+  margin-bottom: 60px;
+}
+.documentation dd ul {
+  list-style: circle;
+}
+
+/*=======================================================================================
+                                      MARK: RESPONSIB
+=======================================================================================*/
+@media (max-width: 800px) {
+  .privacy h2 {
+    margin-bottom: 40px;
+  }
+}

@@ -5,6 +5,7 @@
 @import "./util/cores.css";
 @import "./util/tipografia.css";
 @import "./util/componentes.css";
+@import "./util/formulario.css";
 @import "./util/glassmorphism.css";
 @import "./util/efects.css";
 
@@ -12,6 +13,7 @@
 /* Header e Footer  */
 @import "./global/header.css";
 @import "./global/footer.css";
+
 
 /* Home */
 @import "./home/hero.css";
@@ -22,3 +24,4 @@
 @import "./home/questions.css";
 @import "./home/testimonial.css";
 @import "./home/formulario.css";
+@import "./home/privacy.css";

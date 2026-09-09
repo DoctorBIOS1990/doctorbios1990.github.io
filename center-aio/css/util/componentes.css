@@ -215,18 +215,7 @@
 .documentation a:hover {
   color: var(--cor-6);
 }
-.burble {
-    border: 1px solid var(--border);
-    color: var(--light4);
-    letter-spacing: .02em;
-    background: #0d182499;
-    border-radius: 999px;
-    /*margin-top: 18px;*/
-    padding: 6px 14px;
-    font-size: 12px;
-    /*display: inline-block;*/
-    color: var(--cor-10);
-}
+
 /*=======================================================================================
                                       MARK: RESPONSIB
 =======================================================================================*/

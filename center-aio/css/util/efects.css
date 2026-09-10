@@ -103,14 +103,57 @@
     opacity: 1;
   }
 }
-
 .card-3d {
     transform-style: preserve-3d;
     transition: transform .4s cubic-bezier(.34,1.56,.64,1),box-shadow .4s ease;
     will-change: transform;
 }
-
 .card-3d:hover {
     transform: perspective(800px) rotateX(4deg) rotateY(-4deg) translateZ(8px);
     box-shadow: 0 20px 60px #00000080, 0 0 30px #39b54a26, inset 0 1px #ffffff1f;
+}
+.stack{
+    position: relative;
+    width: 180px;
+    height: 240px;
+    margin-top: 20px;
+}
+.card-baraja{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 420px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: transform 0.5s cubic-bezier(.2, .9, .3, 1.2);
+    align-content: end;
+    border:#ccc solid 2px;
+}
+.c1{
+    background: url('./../../img/fotos/card3.webp') center center no-repeat;
+    background-size: contain;
+    transform: rotate(-6deg);
+    z-index: 1;
+}
+.c2{
+    background: url('./../../img/fotos/card2.webp') center center no-repeat;
+    background-size: contain;
+    transform: rotate(0deg);
+    z-index: 2;
+}
+.c3{
+    background: url('./../../img/fotos/card1.webp') center center no-repeat;
+    background-size: contain;
+    transform: rotate(6deg);
+    z-index: 3;
+}
+.stack:hover .c1{
+    transform: translate(-90px, -30px) rotate(-18deg);
+}
+.stack:hover .c2{
+    transform: translate(0px, -55px) rotate(0deg);
+}
+.stack:hover .c3{
+    transform: translate(90px, -30px) rotate(18deg);
 }

@@ -122,8 +122,8 @@
 .sideBar li a{
   padding: 5px !important;
 }
-.sideBar li a i{
-  padding-right: 10px;
+.sideBar li i{
+  margin-right: 10px;
 }
 .sideBar.active li {
   opacity: 1;

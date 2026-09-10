@@ -8,6 +8,7 @@
   gap: 0 50px;
   position: relative;
   align-items: center;
+  justify-items: center;
 }
 .sobre-contenido {
   padding-top: 20px;
@@ -22,14 +23,11 @@
 .sobre-imagen {
   position: relative;
   overflow: visible;
-  background: url("./../../img/fotos/acerca-de.webp");
+  background: url("./../../img/fotos/acerca-de-hover.webp");
   width: 560px !important;
   height: 560px;
   transition: 0.3s ease-in-out;
   mask-image: linear-gradient(#fff 80%, transparent);
-}
-.sobre-imagen:hover {
-  background: url("./../../img/fotos/acerca-de-hover.webp");
 }
 .trust-bar {
   background: linear-gradient(rgba(9, 15, 22, 0.6), rgba(9, 15, 22, 0.2));
@@ -38,7 +36,7 @@
   padding: 22px 28px;
   position: relative;
   color: var(--cor-9);
-  margin-top: 50px;
+  margin: 50px 0;
   align-content: center;
   display: flex;
   width: -webkit-fill-available;
@@ -70,6 +68,9 @@
                                       MARK: RESPONSIB
 =======================================================================================*/
 @media (max-width: 1200px) {
+  .sobre-bg {
+    padding-top: 40px;
+  }
   .sobre-conteudo::before,
   .sobre::before {
     display: none;

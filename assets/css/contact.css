@@ -38,7 +38,7 @@ section.contact-me {
     text-align: center;
 }
 fieldset label{
-    color: red;
+    font-weight: bold;
  }
 
 .input-error {

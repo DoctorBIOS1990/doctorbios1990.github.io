@@ -14,7 +14,9 @@ html{
     white-space: normal;
 }
 main {
-    /*background: linear-gradient(-150deg, #300c3e, black) no-repeat center center fixed;*/
+    /*background: linear-gradient(-150deg, #300c3e, black) no-repeat center center fixed; */
+    position: absolute;
+    z-index: 1;
     width: 100%;
     min-height: 100vh;
     height: 100%;
@@ -23,7 +25,7 @@ main {
     /*background-color: #16011c;*/
 }
 body {
-    background-color: black;
+    background-color: #202020;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
     top: 0 !important;
@@ -79,4 +81,10 @@ ul li {
 }
 .container {
     margin: 0 auto;
+}
+.dangerInput{
+    border:red 2px solid !important;
+}
+.dangerLabel{
+    color:red !important;
 }

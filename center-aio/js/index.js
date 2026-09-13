@@ -19,49 +19,6 @@ function eventosQuestions(question) {
 
 questions.forEach(eventosQuestions);
 
-/*======================================================================================
-                                  MARK: Carrusel [T]  
-                                  Testimonios 
-======================================================================================*/
-const track = document.querySelector('.carousel-track');
-const slides = Array.from(track.children);
-const prevButton = document.querySelector('.carousel-button.prev');
-const nextButton = document.querySelector('.carousel-button.next');
-const indicators = document.querySelectorAll('.carousel-indicator');
-let currentIndex = 0;
-
-function updateCarousel(index) {
-  if (index < 0) index = slides.length - 1;
-  if (index >= slides.length) index = 0;
-
-  const amountToMove = - index * slides[0].getBoundingClientRect().width;
-  track.style.transform = `translateX(${amountToMove}px)`;
-
-  indicators.forEach((ind, i) => {
-    if (i === index) {
-      ind.classList.add('active');
-    } else {
-      ind.classList.remove('active');
-    }
-  });
-
-  currentIndex = index;
-}
-
-prevButton.addEventListener('click', () => {
-  updateCarousel(currentIndex - 1);
-});
-
-nextButton.addEventListener('click', () => {
-  updateCarousel(currentIndex + 1);
-});
-
-indicators.forEach((indicator, i) => {
-  indicator.addEventListener('click', () => {
-    updateCarousel(i);
-  });
-});
-
 /*====================================================================================
                                   MARK: Carrusel [S]
                                   Exploracion Screenshots 
@@ -396,6 +353,29 @@ slidesExplora.forEach(slide => {
     showImageModal(img);
     dragMoved = false;
     dragDistance = 0;
+  });
+});
+
+/*======================================================================================
+                                  MARK: CARD LIGHT
+======================================================================================*/
+document.querySelectorAll('.card .interactive').forEach((interBubble) => {
+  const card = interBubble.closest('.card');
+
+  card.addEventListener('pointerenter', () => {
+    interBubble.style.opacity = '0.7';
+  });
+
+  card.addEventListener('pointermove', (event) => {
+    const bounds = card.getBoundingClientRect();
+    const x = event.clientX - bounds.left;
+    const y = event.clientY - bounds.top;
+
+    interBubble.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
+  });
+
+  card.addEventListener('pointerleave', () => {
+    interBubble.style.opacity = '0';
   });
 });
 

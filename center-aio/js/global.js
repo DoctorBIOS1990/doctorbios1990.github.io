@@ -82,6 +82,9 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.classList.add("show");
     } else {
       entry.target.classList.remove("show");
+
+      // Adjust Elements
+      trustBarDivider();
     }
   });
 });

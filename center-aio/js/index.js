@@ -356,27 +356,31 @@ slidesExplora.forEach(slide => {
   });
 });
 
+
 /*======================================================================================
                                   MARK: CARD LIGHT
 ======================================================================================*/
 document.querySelectorAll('.card .interactive').forEach((interBubble) => {
-  const card = interBubble.closest('.card');
+    const card = interBubble.closest('.card');
 
-  card.addEventListener('pointerenter', () => {
-    interBubble.style.opacity = '0.7';
-  });
+    card.addEventListener('pointerenter', () => {
+      interBubble.style.opacity = '0.7';
+    });
 
-  card.addEventListener('pointermove', (event) => {
-    const bounds = card.getBoundingClientRect();
-    const x = event.clientX - bounds.left;
-    const y = event.clientY - bounds.top;
+    card.addEventListener('pointermove', (event) => {
+      if (window.innerWidth > 1059){
+        const bounds = card.getBoundingClientRect();
+        const x = event.clientX - bounds.left;
+        const y = event.clientY - bounds.top;
 
-    interBubble.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
-  });
+        interBubble.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
+      }
+    });
 
-  card.addEventListener('pointerleave', () => {
-    interBubble.style.opacity = '0';
-  });
+    card.addEventListener('pointerleave', () => {
+      interBubble.style.opacity = '0';
+    });
+
 });
 
 /*======================================================================================

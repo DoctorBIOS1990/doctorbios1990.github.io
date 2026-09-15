@@ -59,9 +59,37 @@
   gap: 40px; 
   padding-top: 20px;
  }
-.hero-list i{
-  padding-right: 5px;
+ .trust-bar {
+  background: linear-gradient(rgba(9, 15, 22, 0.6), rgba(9, 15, 22, 0.2));
+  border-top: 1px solid rgba(42, 120, 203, 0.12);
+  border-bottom: 1px solid rgba(42, 120, 203, 0.12);
+  padding: 22px 28px;
+  position: relative;
+  color: var(--cor-9);
+  margin-bottom: 50px;
+  align-content: center;
+  display: flex;
+  width: -webkit-fill-available;
 }
+.trust-item {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  align-items: center;
+  gap: 9px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+}
+.trust-inner {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0px auto;
+  display: flex;
+}
+
 /*======================================================================================
                                       MARK: RESPONSIB
 =======================================================================================*/

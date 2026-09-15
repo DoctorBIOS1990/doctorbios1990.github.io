@@ -57,21 +57,6 @@ sideBarLinks.forEach(function (link) {
     element.addEventListener('click', () => sidebar.classList.remove("active"))
   })
 });
-
-// Remove Pipes the Trust Items
-function trustBarDivider(){
-  const dividers = document.querySelectorAll(".trust-inner .trust-divider");
-  const width = window.innerWidth;
-  if ( width < 979 ){
-    dividers.forEach(function (divider) {
-      divider.innerHTML = '';
-    });
-  }else{
-    dividers.forEach(function (divider) {
-      divider.innerHTML = '|';
-    });
-  }
-}
  
 /*======================================================================================
                                   MARK: OBSERVER
@@ -82,9 +67,6 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.classList.add("show");
     } else {
       entry.target.classList.remove("show");
-
-      // Adjust Elements
-      trustBarDivider();
     }
   });
 });

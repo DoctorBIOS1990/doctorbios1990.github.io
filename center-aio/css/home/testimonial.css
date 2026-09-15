@@ -48,6 +48,10 @@
   border: var(--cor-10) 1px solid;
   box-shadow: 0px 0px 10px var(--color-primary-software);
 }
+.cta-bg{
+
+  padding: 100px 0;
+}
 .cta-botones {
   display: flex;
   gap: 32px;
@@ -55,9 +59,7 @@
   margin-top: 20px;
   justify-content: center;
 }
-.cta{
-  padding: 50px 0;
-}
+
 /*=======================================================================================
                                       MARK: RESPONSIB
 =======================================================================================*/

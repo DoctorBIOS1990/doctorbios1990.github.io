@@ -38,7 +38,7 @@
   position: absolute;
   width: 300px;
   top: 30px;
-  right: -250px;
+  right: -245px;
   isolation: isolate;
   animation: flutuar 3s ease-in-out infinite;
 }

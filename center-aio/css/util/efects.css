@@ -1,4 +1,3 @@
-
 /*=======================================================================================
                                       MARK: EFFECTS
 =======================================================================================*/
@@ -103,6 +102,7 @@
     opacity: 1;
   }
 }
+
 .card-3d {
     transform-style: preserve-3d;
     transition: transform .4s cubic-bezier(.34,1.56,.64,1),box-shadow .4s ease;
@@ -133,7 +133,7 @@
 .c1{
     background: url('./../../img/fotos/card3.webp') center center no-repeat;
     background-size: contain;
-    transform: rotate(-6deg);
+    transform: rotate(6deg);
     z-index: 1;
 }
 .c2{
@@ -145,7 +145,7 @@
 .c3{
     background: url('./../../img/fotos/card1.webp') center center no-repeat;
     background-size: contain;
-    transform: rotate(6deg);
+    transform: rotate(-6deg);
     z-index: 3;
 }
 .stack:hover .c1{
@@ -156,4 +156,51 @@
 }
 .stack:hover .c3{
     transform: translate(90px, -30px) rotate(18deg);
+}
+.screen {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+  background:
+    linear-gradient(180deg, rgba(32, 32, 32, .08) 0 50%, rgba(32, 32, 32, .65) 100%),
+    linear-gradient(180deg, var(--ink) 0%, var(--purple) 100%);
+}
+.screen::before,
+.screen::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.screen::before {
+  z-index: 2;
+  opacity: .15;
+  background: repeating-linear-gradient(0deg, transparent 0 3px, var(--ink) 3px 5px);
+}
+.screen::after {
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(204, 204, 204, .08) 1px, transparent 1px), linear-gradient(rgba(204, 204, 204, .08) 1px, transparent 1px);
+  background-size: 64px 64px;
+  transform: perspective(500px) rotateX(58deg) scale(2) translateY(18%);
+  transform-origin: bottom;
+}
+
+.malla::after{
+  transform: none;
+  mask-image: linear-gradient(
+    to bottom,
+    white 50%,
+    transparent,
+    white 85%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    white 50%,
+    white 85%,
+    transparent
+  );
 }

@@ -134,14 +134,19 @@
   <!--
     MARK: HEADER 
   -->
-  <header class="header-bg">
-    
+  <header class="header-bg">  
     <div class="header">
       <a class="logo" href="#home" aria-label="Voltar para Página Inicial">
-        <picture>
-          <source srcset="./img/logo.webp" media="(prefers-color-scheme: dark)">
-          <img src="./img/logo.webp" width="200"  alt="Logo center AIO" draggable="false" fetchpriority="high" decoding="async">
-        </picture>
+            <picture>
+              <source srcset="./img/favicon-dark.webp">
+              <img src="./img/favicon-dark.webp" width="32"  alt="Logo center AIO" 
+                      draggable="false" fetchpriority="high" decoding="async">
+            </picture>
+  
+            <p class="font-1-lm cor-12">
+              <span class="gradient-slow">Center<br> AIO</span>
+              <span class="gradient-bold">PRO</span>.
+            </p>    
       </a>
   
       <!--
@@ -199,7 +204,7 @@
   <!--
     MARK: HOME  
   -->
-  <section class="hero-bg hidden">
+  <section class="hero-bg screen hidden">
     <div class="hero container hidden">
       <div class="hero-contenido">
         <h1 class="font-1-xxl cor-12">
@@ -215,15 +220,15 @@
         
           <!-- Keywords -->
         <div class="text-center margin-bottom">
-          <button class="keyword cor-12 margin-bottom">🔑 seguridad </button>
-          <button class="keyword cor-12 margin-bottom">🎯 fiabilidad </button>
-          <button class="keyword cor-12 margin-bottom">⌛️ velocidad </button>
-          <button class="keyword cor-12 margin-bottom">📄 disponible </button>
-          <button class="keyword cor-12 margin-bottom">💰 gestión </button>
-          <button class="keyword cor-12 margin-bottom">✈️ eficiencia </button>
-          <button class="keyword cor-12 margin-bottom">🧠 análisis </button>
-          <button class="keyword cor-12 margin-bottom">🔌 offline </button>
-          <button class="keyword cor-12 margin-bottom">💼 portable </button>
+          <button class="keyword cor-12 margin-bottom">🔑 SEGURIDAD </button>
+          <button class="keyword cor-12 margin-bottom">🎯 FIABILIDAD </button>
+          <button class="keyword cor-12 margin-bottom">⌛️ VELOCIDAD </button>
+          <button class="keyword cor-12 margin-bottom">📄 DISPONIBLE </button>
+          <button class="keyword cor-12 margin-bottom">💰 GESTIÓN </button>
+          <button class="keyword cor-12 margin-bottom">✈️ EFICIENCIA </button>
+          <button class="keyword cor-12 margin-bottom">🧠 ANÁLISIS </button>
+          <button class="keyword cor-12 margin-bottom">🔌 OFFLINE </button>
+          <button class="keyword cor-12 margin-bottom">💼 PORTABLE </button>
         </div>
 
         <ul class="hero-botones">
@@ -237,12 +242,14 @@
             <div class="card-baraja c1"></div>
             <div class="card-baraja c2"></div>
             <div class="card-baraja c3"></div>
-        </div>
-
-        <!--<picture>
-          <img src="./img/fotos/home-screen.webp" alt="Screenshot collage" draggable="false" fetchpriority="high" decoding="async">
-        </picture>-->      
+        </div>  
       </div> 
+
+      <div class="layer">
+          <picture>
+            <img src="./img/screenshots/0.webp" draggable="false" alt="" fetchpriority="high" decoding="async"/>
+          </picture>
+      </div>  
     </div>
   </section>
 
@@ -342,27 +349,28 @@
         <h2 class="font-1-xxl cor-12">
           <i class="fa fa-codepen"></i>
           <span class="gradient-slow">Sobre la </span></span><span class="gradient-bold">APP</span>
+          
         </h2>
 
         <p class="font-2-l cor-10">
-          Surge de la necesidad apremiante de <strong>economizar el tiempo</strong>, las acciones de investigación, 
-          la carencia de experiencia, y control del negocio personal de técnico en electrónica aplicado 
-          a la reparación de equipos de cómputo y accesorios.
+          Surge de la necesidad de <strong>economizar el tiempo</strong>, las acciones de investigación, 
+          la carencia de experiencia, y control del negocio personal del servicio de reparación electrónica 
+          de equipos de cómputo y accesorios.
         </p>
 
         <p class="font-2-l cor-10"><strong>Necesidades repetitivas</strong> como:</p>
 
         <!-- Keywords -->
          <div class="keyword-container text-center">
-            <button class="keyword cor-12 margin-bottom">⚡ cálculos eléctricos </button>
-            <button class="keyword cor-12 margin-bottom">🔍 consultas </button>
-            <button class="keyword cor-12 margin-bottom">🔁 traducción </button>
-            <button class="keyword cor-12 margin-bottom">📄 datos </button>
-            <button class="keyword cor-12 margin-bottom">💰 gestión </button>
-            <button class="keyword cor-12 margin-bottom">💡 experiencias </button>
-            <button class="keyword cor-12 margin-bottom">🔑 control </button>
-            <button class="keyword cor-12 margin-bottom">🧠 análisis </button>
-            <button class="keyword cor-12 margin-bottom">🌐 navegación </button>
+            <button class="keyword cor-12 margin-bottom">⚡ CÁLCULOS ELÉCTRICOS </button>
+            <button class="keyword cor-12 margin-bottom">🔍 CONSULTAS </button>
+            <button class="keyword cor-12 margin-bottom">🔁 TRADUCCIÓN </button>
+            <button class="keyword cor-12 margin-bottom">📄 DATOS </button>
+            <button class="keyword cor-12 margin-bottom">💰 GESTIÓN </button>
+            <button class="keyword cor-12 margin-bottom">💡 EXPERIENCIA </button>
+            <button class="keyword cor-12 margin-bottom">🔑 CONTROL </button>
+            <button class="keyword cor-12 margin-bottom">🧠 ANÁLISIS </button>
+            <button class="keyword cor-12 margin-bottom">🌐 NAVEGACIÓN </button>
         </div>
       </div>
     </div>
@@ -409,8 +417,9 @@
       <h2 class="font-1-xxl cor-12 hidden text-center">
         <i class="fa fa-puzzle-piece"></i>
         <span class="gradient-slow"> Funciones</span>.
-        <p class="font-1-s cor-9">Módulos Escogidos</p> 
+        <p class="font-1-s cor-9"> Módulos Escogidos</p>
       </h2>
+
       <div class="features-container">
         <!-- 
           MARK: #FG1 
@@ -566,7 +575,7 @@
         <i class="fa fa-search-plus"></i>
         <span class="gradient-slow">Exploralo</span>.
         <p class="font-1-s cor-9">
-          Desliza o haz clic para moverte o para ampliar.
+          Desliza o haz click para mover o ampliar.
         </p> 
     </h2>
 
@@ -664,7 +673,8 @@
       
       <h2 class="font-1-xxl cor-12 text-center">
         <i class="fa fa-credit-card"></i>
-        <span class="gradient-slow">Suscripción</span><span class="cor-6">.</span>
+        <span class="gradient-slow">Licencia</span>.
+        <i class="glyphicon glyphicon-user"></i>
         <p class="font-1-s cor-9">Elige tu forma de pago</p>
       </h2>
 
@@ -732,6 +742,7 @@
         <i class="fa fa-question-circle"></i>
         <span class="gradient-slow"> Preguntas</span>.
         <p class="font-1-s cor-9">Todo lo que necesitas saber</p> 
+        
       </h2>
       
       <!-- List FAQ -->
@@ -743,7 +754,9 @@
           <dt><button class="font-1-m cor-12" aria-controls="requerimientos" aria-expanded="false">
             ¿Qué requerimientos necesita?</button>
           </dt>
+          
           <dd id="requerimientos" class="font-2-s cor-10">
+            
             Debe constar con los requerimientos minimos, tales como una versión de Windows superior a Windows 7, 
             recomendado Windows 10 con memoria operativa de 4GB de RAM.
           </dd>
@@ -773,7 +786,7 @@
             ¿Cómo es el tema de las licencias?</button>
           </dt>
           <dd id="licencia" class="font-2-s cor-10 ">
-            Consta de licencia OEM unicamente son válidas para un equipo ya que se asocian a un hardware 
+            Consta de licencia Node-Locked unicamente son válidas para un equipo ya que se asocian a un hardware 
             concreto del equipo. Si realizamos cualquier modificación en el hardware del equipo no podremos 
             seguir utilizando la licencia, A más detalles, contactar el desarrollador.
           </dd>
@@ -847,7 +860,7 @@
       <h2 class="font-1-xxl cor-12 hidden text-center margin-bottom">
         <i class="fa fa-commenting"></i>
         <span class="gradient-slow"> Testimonios</span>.
-        <p class="font-1-s cor-9">Lo que piensan los clientes</p> 
+        <p class="font-1-s cor-9">¡Lo que piensan los clientes!</p> 
       </h2>
 
       <div class="testimonial-container">
@@ -1053,11 +1066,27 @@
     </div>
   </section>
 
+  <!--
+    MARK: CTA
+  -->
+  <div class="cta " style="margin-top:50px">
+    <div class="form-container-text container">   
+      <h2 class="font-1-xl cor-12 text-center hidden">
+        <span class="gradient-slow">¿Listo para dar el salto?</span>
+      </h2>
+
+      <ul class="hero-botones" style="justify-content: center;">
+        <li><a class="boton-oscuro font-1-m hidden" href="./docs/Guia de usuario - Center AIO Pro 2.1 (ES).pdf" download title="📄 Descargar la guia de usuario en PDF">Descarga PDF</a></li>
+        <li><a class="boton font-1-m hidden" href="#price" title="🛒 Ponganos en contacto">Adquirir</a></li>
+      </ul> 
+    </div>
+  </div>
+</div>
 
   <!--
     MARK: FORM
   -->
-  <section class="formulario-bg" id="contacto">
+  <section class="formulario-bg screen" id="contacto">
 
     <div class="form-container-text container">
         
@@ -1100,7 +1129,7 @@
 <!--
   MARK: FOOTER
 -->
-<footer class="footer-bg" id="contacto">
+<footer class="footer-bg screen malla">
     <div class="footer">
 
       <div class="footer-left hidden">
@@ -1123,24 +1152,24 @@
                 
                 <!-- Keywords -->
                 <div class="footer-keywords text-center">
-                  <button class="keyword cor-12 margin-bottom">🔑 seguridad </button>
-                  <button class="keyword cor-12 margin-bottom">🎯 fiabilidad </button>
-                  <button class="keyword cor-12 margin-bottom">⌛️ velocidad </button>
-                  <button class="keyword cor-12 margin-bottom">📄 disponible </button>
-                  <button class="keyword cor-12 margin-bottom">💰 gestión </button>
-                  <button class="keyword cor-12 margin-bottom">✈️ eficiencia </button>
-                  <button class="keyword cor-12 margin-bottom">🧠 análisis </button>
-                  <button class="keyword cor-12 margin-bottom">🔌 offline </button>
-                  <button class="keyword cor-12 margin-bottom">💼 portable </button>
-                  <button class="keyword cor-12 margin-bottom">⚡ cálculos eléctricos </button>
-                  <button class="keyword cor-12 margin-bottom">🔍 consultas </button>
-                  <button class="keyword cor-12 margin-bottom">🔁 traducción </button>
-                  <button class="keyword cor-12 margin-bottom">📄 datos </button>
-                  <button class="keyword cor-12 margin-bottom">💰 gestión </button>
-                  <button class="keyword cor-12 margin-bottom">💡 experiencias </button>
-                  <button class="keyword cor-12 margin-bottom">🔑 control </button>
-                  <button class="keyword cor-12 margin-bottom">🧠 análisis </button>
-                  <button class="keyword cor-12 margin-bottom">🌐 navegación </button>
+                  <button class="keyword cor-12 margin-bottom">🔑 SEGURIDAD </button>
+                  <button class="keyword cor-12 margin-bottom">🎯 FIABILIDAD </button>
+                  <button class="keyword cor-12 margin-bottom">⌛️ VELOCIDAD </button>
+                  <button class="keyword cor-12 margin-bottom">📄 DISPONIBLE </button>
+                  <button class="keyword cor-12 margin-bottom">💰 GESTIÓN </button>
+                  <button class="keyword cor-12 margin-bottom">✈️ EFICIENCIA </button>
+                  <button class="keyword cor-12 margin-bottom">🧠 ANÁLISIS </button>
+                  <button class="keyword cor-12 margin-bottom">🔌 OFFLINE </button>
+                  <button class="keyword cor-12 margin-bottom">💼 PORTABLE </button>
+                  <button class="keyword cor-12 margin-bottom">⚡ CÁLCULOS ELÉCTRICOS </button>
+                  <button class="keyword cor-12 margin-bottom">🔍 CONSULTAS </button>
+                  <button class="keyword cor-12 margin-bottom">🔁 TRADUCCIÓN </button>
+                  <button class="keyword cor-12 margin-bottom">📄 DATOS </button>
+                  <button class="keyword cor-12 margin-bottom">💰 GESTIÓN </button>
+                  <button class="keyword cor-12 margin-bottom">💡 EXPERIENCIA </button>
+                  <button class="keyword cor-12 margin-bottom">🔑 CONTROL </button>
+                  <button class="keyword cor-12 margin-bottom">🧠 ANÁLISIS </button>
+                  <button class="keyword cor-12 margin-bottom">🌐 NAVEGACIÓN </button>                  
                 </div>
         </div>
       </div>
@@ -1206,8 +1235,7 @@
               <ul class="font-1-m cor-7">
                 <li><a target="_blank" href="./terms.html">Términos</a></li>
                 <li><a target="_blank" href="./privacy.html">Política</a></li>
-                <li><a target="_blank" href="#">EULA</a></li>
-                <li><a target="_blank" href="./docs/Guia de usuario - Center AIO Pro 2.1 (ES).pdf">Guia</a></li>
+                <li><a target="_blank" href="./docs/Guia de usuario - Center AIO Pro 2.1 (ES).pdf">Guía Usuario</a></li>
                 </br>
               </ul>
             </nav>

@@ -37,6 +37,23 @@
    margin-bottom: 100px;
    justify-items: center;
 }
+.hero .layer {
+    display: none;
+    background: var(--color-gradient-green);
+    justify-content: center;
+    object-fit: contain;
+    padding: 10px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    isolation: isolate;
+    animation: flutuar 3s ease-in-out infinite;
+ }
+.hero .layer img{
+  border-radius: 32px;
+  mask-image: linear-gradient(bottom #fff 80%, transparent);
+ }
 /*======================================================================================
                                       MARK: RESPONSIB
 =======================================================================================*/
@@ -52,7 +69,7 @@
 }
 @media (max-width: 800px) {
   .hero-bg {
-    padding: 140px 0;
+    padding: 100px 0; /*140px*/
   }
   .hero {
     grid-template-columns: 1fr;
@@ -78,9 +95,23 @@
   .home-imagen, .skills-bg {
     display: none;
   }
+  .hero .layer {
+    display: inline-block;
+  }
 }
 @media (width < 422px) {
   .hero h1 {
     font-size: 2.0rem ;
+  }
+}
+@media (width < 630px) {
+  .hero .layer {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .hero .layer img{
+    border-radius: 20px;
   }
 }

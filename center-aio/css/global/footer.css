@@ -1,11 +1,10 @@
-footer{
+.footer-bg{
   background: linear-gradient(rgba(9, 15, 22, 0.6), rgba(9, 15, 22, 0.2));
   border-top: 1px solid rgba(42, 120, 203, 0.12);
   border-bottom: 1px solid rgba(42, 120, 203, 0.12);
-  /*padding: 22px 28px;*/
   position: relative;
   color: var(--cor-9);
-  margin-top: 150px;
+  margin-top: 100px;
   align-content: center;
 }
 .footer {
@@ -108,7 +107,7 @@ footer{
   font-size: small;
 }
 .comment {
-  background-color: rgba(250,250,250, 0.1);
+ background-color: rgba(250,250,250, 0.1);
   border: var(--cor-5) solid 1px;
   padding: 10px;
   border-radius: 10px;

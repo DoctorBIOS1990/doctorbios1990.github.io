@@ -12,7 +12,20 @@
 }
 .logo {
   transition: 0.3s;
+  display:flex; 
+  align-items: center;
   margin-bottom: 0 !important;
+}
+.logo img{
+  padding:10px; 
+  background: var(--color-gradient-green); 
+  border-radius:10px;
+  border:var(--cor-8) 2px solid;
+}
+.logo p{
+  margin-left:10px; 
+  line-height: 1.5rem;
+  padding-bottom:5px;
 }
 .header {
   display: none;

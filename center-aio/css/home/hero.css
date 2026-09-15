@@ -3,7 +3,7 @@
 }
 .hero {
   gap: 0px 50px;
-  padding-top: 80px;
+  padding-top: 60px;
   display: grid;
   grid-template-columns: 6fr 5fr;
   justify-content: center;
@@ -54,6 +54,14 @@
   border-radius: 32px;
   mask-image: linear-gradient(bottom #fff 80%, transparent);
  }
+ .hero-list{
+  display: flex; 
+  gap: 40px; 
+  padding-top: 20px;
+ }
+.hero-list i{
+  padding-right: 5px;
+}
 /*======================================================================================
                                       MARK: RESPONSIB
 =======================================================================================*/

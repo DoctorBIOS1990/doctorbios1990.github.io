@@ -5,7 +5,6 @@
 }
 .price-container {
   display: grid;
-  gap: 40px;
   flex-wrap: wrap;
   grid-template-columns: repeat(2, 1fr);
   gap: 0;
@@ -29,7 +28,6 @@
   border-top: var(--cor-7) 5px solid;
   border-radius: 10px;
   padding: 30px;
-  box-shadow: 0px 0px 20px var(--color-primary-software);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.16);
   transition: all 0.3s ease-in-out;
 }
@@ -187,6 +185,6 @@
 @media (width < 650px) {
   .price-container{
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 40px;
   }
 }

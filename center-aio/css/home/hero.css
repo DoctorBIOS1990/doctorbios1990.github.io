@@ -105,6 +105,11 @@
   }
   .hero .layer {
     display: inline-block;
+    margin-top: 50px;
+  }
+  .hero-list{
+    justify-content: center;
+    gap: 10px;
   }
 }
 @media (width < 422px) {
@@ -114,12 +119,6 @@
 }
 @media (width < 630px) {
   .hero .layer {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
-  .hero .layer img{
-    border-radius: 20px;
+    padding: 8px;
   }
 }

@@ -105,7 +105,8 @@
 }
 @media (max-width: 800px) {
   .hero-bg {
-    padding: 100px 0; /*140px*/
+    padding-top: 140px;
+    padding-bottom: 100px;
   }
   .hero {
     grid-template-columns: 1fr;

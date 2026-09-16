@@ -43,11 +43,15 @@
 =======================================================================================*/
 @media (max-width: 1025px) {
   .metricas-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 @media (max-width: 425px) {
   .metricas-container {
     grid-template-columns: 1fr;
   }
+  .metricas-container .card .number{
+    font: 700 2rem/1.25 "Exo2", sans-serif;
+  }
 }
+

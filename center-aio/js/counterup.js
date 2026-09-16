@@ -83,6 +83,6 @@
 
 // RUNNING
 counterUp(".counter", {
-    time: 400,
+    time: 500,
     delay: 10
 });

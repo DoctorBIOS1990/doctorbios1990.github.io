@@ -148,7 +148,7 @@
 }
 .carousel-slide-explora:hover {
   transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 0 10px var(--color-primary-software);
+  box-shadow: 0 0 5px var(--color-shadow);
 }
 .hover {
   transform: translateY(-6px) scale(1.02);
@@ -227,6 +227,9 @@
   align-items: center;
   z-index: 1000;
 }
+.modal #title{
+  margin-top: 10px;
+}
 .modal.hidden {
   display: none;
 }
@@ -284,6 +287,7 @@
 .modal-nav.next {
   right: 10px;
 }
+
 
 /*=======================================================================================
                                       MARK: RESPONSIB

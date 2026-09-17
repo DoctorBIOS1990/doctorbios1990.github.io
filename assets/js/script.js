@@ -52,7 +52,7 @@ $(window).scroll(function() {
 /*======================================================================================================
                                             MARK: Typewriter
 ======================================================================================================*/
-const words = ["🚀FullStack Developer.", "🎯Product Builder.", "🌐Web Design.", "💻Desktop Developer."];
+const words = ["FullStack Developer.", "Product Builder.", "Web Design.", "Desktop Developer."];
 const text = document.querySelector('.skills-services');
 
 i = 0, j = 0, del = false;

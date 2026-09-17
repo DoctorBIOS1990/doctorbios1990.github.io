@@ -94,7 +94,7 @@
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.16);
   letter-spacing: 0.02em;
   white-space: nowrap;
-  background: rgba(9, 15, 22, 0.4); 
+  background: none; 
   border-radius: 999px;
   padding: 5px 10px;
   transition: 0.2s;
@@ -198,7 +198,9 @@
 .documentation a:hover {
   color: var(--cor-6);
 }
-
+.documentation .comment{
+  max-width: none;
+}
 /*=======================================================================================
                                       MARK: RESPONSIB
 =======================================================================================*/

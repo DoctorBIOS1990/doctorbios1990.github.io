@@ -188,7 +188,7 @@
   overflow: hidden;
 }
 .documentation dd.activa {
-  max-height: 500px;
+  max-height: 700px;
   opacity: 1;
   padding-top: 16px;
 }
@@ -210,10 +210,5 @@
   }
   .card p {
     font-size: 0.9rem;
-  }
-}
-@media (width < 502px) {
-  .documentation dl > div {
-    max-height: 500px;
   }
 }

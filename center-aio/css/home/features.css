@@ -60,6 +60,9 @@
   justify-content: center;
   transition: transform 0.2s ease 0.1s;
 }
+.icon-suscription i{
+  padding-right: 0;
+}
 .features-container .card {
   transition: 600ms;
 }

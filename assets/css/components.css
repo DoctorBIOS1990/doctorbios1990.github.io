@@ -45,10 +45,15 @@ button:hover {
     transition: all 0.5s ease;
     border-top: 1px solid #661a83;
 }
-.main-nav li:hover a,
 .main-nav li.active a {
     background: linear-gradient(-66.77deg, #661a83, black);
     color: white;
+    padding-left: 15px;
+    border-left: 3px solid #661a83;
+}
+.main-nav li:hover a {
+    background: linear-gradient(-66.77deg, #661a83, #ccc);
+    color: black;
     padding-left: 15px;
     border-left: 3px solid #661a83;
 }
@@ -135,8 +140,8 @@ button:hover {
     -webkit-overflow-scrolling: touch;
     background: rgb(0,0,0,.3);
     /*background: linear-gradient(-180deg, black, transparent);*/
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     box-sizing: border-box;
     height: 100vh;  
     max-height: 100vh;

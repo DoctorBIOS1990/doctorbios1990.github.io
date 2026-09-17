@@ -53,5 +53,8 @@
   .metricas-container .card .number{
     font: 700 2rem/1.25 "Exo2", sans-serif;
   }
+  .metricas .card{
+    margin: 0 25px;
+  }
 }
 

@@ -333,7 +333,7 @@
 
       <div class="features-container">
         <!-- 
-          MARK: #FG1 
+          MARK: # FG1 
         -->
         <div class="card hidden">
             <div class="icon-feature">
@@ -360,7 +360,7 @@
         <!-- End Feature-Group 1 -->
 
         <!-- 
-          MARK: #FG2 
+          MARK: # FG2 
         -->
         <div class="card hidden">
           <div class="icon-feature">
@@ -387,7 +387,7 @@
         <!-- End Feature-Group 2 -->
 
         <!-- 
-          MARK: #FG3 
+          MARK: # FG3 
         -->
         <div class="card hidden">
           <div class="icon-feature">
@@ -412,7 +412,7 @@
         <!-- End Feature-Group 3 -->
 
         <!-- 
-          MARK: #FG4 
+          MARK: # FG4 
         -->
         <div class="card hidden">
           <div class="icon-feature">
@@ -453,7 +453,7 @@
         <!-- End Feature-Group 5 -->
 
         <!-- 
-          MARK: #FG6 
+          MARK: # FG6 
         -->
         <div class="card hidden">
           <div class="icon-feature">
@@ -587,58 +587,141 @@
         <p class="font-1-s cor-9">Elige tu forma de pago</p>
       </h2>
 
-      <center>
+      
       <div class="price-container">
+
+        <!-- 
+          MARK: # FREE 
+        -->
+        <div class="price-card free">
+
+          <div class="icon-suscription icon-free" aria-hidden="true">
+            <i class="fa fa-gift cor-9"></i>
+          </div>
+
+          <h3 class="font-1-lm cor-12">
+            <span class="gradient-success">FREE</span>
+          </h3>
+
+          <p class="font-1-sm cor-8">
+            <span class="cor-18"><strong><i class="fa fa-close"></i> No displonible</strong></span><br>
+             Desbloqueo de contraseñas
+          </p>
+
+          <p class="price-amount">
+            <span class="font-1-xl cor-11" data-price="free">$ 0</span> 
+            <span class="font-2-1 cor-11">CUP</span>
+          </p>
+
+          <p class="price-savings font-2-xs cor-9">
+            <span class="keyword">🧪 Pruebalo</span><br><br> 
+            <span class="cor-15">Sin compromisos.</span><br> 
+            <span>3 dias</span>
+          </p>
+
+          <p class="price-savings font-2-xs cor-9"></p>
+            <button class="submit-price btn-free col-2" onclick="suscription('gratuito')">
+            <i class="fa fa-check"></i> Comenzar </button>
+        </div>
+
+        <!-- 
+          MARK: # BASIC 
+        -->
         <div class="price-card">
+
           <div class="icon-suscription" aria-hidden="true">
             <i class="fa fa-calendar cor-9"></i>
           </div>
 
           <h3 class="font-1-lm cor-12">
-            <span class="gradient-slow">MENSUAL</span>
+            <span class="gradient-slow">BASIC</span>
           </h3>
 
           <p class="font-1-sm cor-8">
             <strong>Acceso completo a las </br>funciones del aplicativo.</strong>
           </p>
 
-          <p class="price-amount font-1-xl cor-11" data-price="monthly">$5,000 CUP/<sub>mes</sub></p>
+          <p class="price-amount">
+            <span class="font-1-xl cor-11" data-price="monthly">$ <span class="counter">5,000</span></span> 
+            <span class="font-2-1 cor-11">CUP</span>
+          </p>
 
           <p class="price-savings font-2-xs cor-9">
             <span class="keyword">💎 Controlado</span></br></br> 
-            <span class="cor-15">Tu inversión en el tiempo.</span></br> 
-            <span>Suspende cuando quieras</span>
+            <span class="cor-17">Tu inversión en el tiempo.</span></br> 
+            <span>1 Mes</span>
           </p>
 
           <p class="price-savings font-2-xs cor-9"></p>
-          <a class="submit-price col-2" href="tg://resolve?domain=doctorbios&text=Hola he accedido a la web oficial de Center AIO Pro y estoy interesado en el plan mensual.">🛒 Comenzar ahora</a>
+          <button class="submit-price col-2" onclick="suscription('mensual')">
+          <i class="fa fa-cart-plus"></i> Comenzar</button>
         </div>
 
+        <!-- 
+          MARK: # VIP 
+        -->
+        <div class="price-card">
 
+          <div class="icon-suscription" aria-hidden="true">
+            <i class="fa fa-black-tie cor-9"></i>
+          </div>
+
+          <h3 class="font-1-lm cor-12">
+            <span class="gradient-slow">VIP</span>
+          </h3>
+
+          <p class="font-1-sm cor-8">
+            <strong>Acceso completo a las </br>funciones del aplicativo.</strong>
+          </p>
+
+          <p class="price-amount">
+            <span class="font-1-xl cor-11" data-price="monthly">$ <span class="counter">28,500</span></span> 
+            <span class="font-2-1 cor-11">CUP</span>
+          </p>
+
+          <p class="price-savings font-2-xs cor-9">
+            <span class="keyword">💰 Ahorra 5%</span></br></br> 
+            <span class="line-through">30,000 CUP</span> 
+            <span class="cor-17">Ahorra $1,500</span></br> 
+            <span>6 Meses - 4,750 CUP/mes</span>
+          </p>
+
+          <p class="price-savings font-2-xs cor-9"></p>
+          <button class="submit-price col-2" onclick="suscription('semestral')">
+          <i class="fa fa-cart-plus"></i> Comenzar</button>
+        </div>
+
+        <!-- 
+          MARK: # PREMIUM 
+        -->
         <div class="price-card gold">
           <div class="icon-suscription icon-gold" aria-hidden="true">
             <i class="fa fa-calendar-check-o cor-9"></i>
           </div>
 
           <h3 class="font-1-lm cor-12">
-            <span class="gradient-gold">ANUAL</span>
+            <span class="gradient-gold">PREMIUM</span>
           </h3>
 
           <p class="font-1-sm cor-8">
             <strong>Acceso completo a las </br>funciones del aplicativo.</strong>
           </p>
 
-          <p class="price-amount font-1-xl cor-11" data-price="monthly">$54,000 CUP/<sub>año</sub></p>
+          <p class="price-amount">
+            <span class="font-1-xl cor-11" data-price="monthly"">$ <span class="counter">54,000</span></span>
+            <span class="font-2-1 cor-11">CUP</span>
+          </p>
           <p class="price-savings font-2-xs cor-9">
             <span class="keyword">💰 Ahorra 10%</span></br></br> 
             <span class="line-through">60,000 CUP</span> 
-            <span class="cor-16">Ahorras 6,000 CUP</span></br> 
-            <span>Equivale a 4,500 CUP/mes</span>
+            <span class="cor-16">Ahorra $6,000</span></br> 
+            <span>1 Año - 4,500 CUP/mes</span>
           </p>
-          <a class="submit-price btn-gold col-2" href="tg://resolve?domain=doctorbios&text=Hola he accedido a la web oficial de Center AIO Pro y estoy interesado en el plan anual.">🛒 Comenzar ahora</a>
+          <button class="submit-price btn-gold col-2" onclick="suscription('anual')">
+          <i class="fa fa-cart-plus"></i> Comenzar</button
         </div>
+
       </div>
-      </center>
     </div>
   </section>
 
@@ -646,7 +729,7 @@
     MARK: FAQ
   -->
   <section class="questions-bg hidden" id="questions">
-    <div class="questions container">
+    <div class="documentation container">
       <h2 class="font-1-xxl cor-12 text-center">
         <i class="fa fa-question-circle"></i>
         <span class="gradient-slow"> Preguntas</span>.
@@ -657,9 +740,9 @@
       <!-- List FAQ -->
       <dl>
         <!-- 
-          MARK: #F1
+          MARK: # F1
         -->
-        <div class="questions-container">
+        <div class="container">
           <dt><button class="font-1-m cor-12" aria-controls="requerimientos" aria-expanded="false">
             ¿Qué requerimientos necesita?</button>
           </dt>
@@ -672,9 +755,9 @@
         <!-- END QUESTION 1 -->
 
         <!-- 
-          MARK: #F2
+          MARK: # F2
         -->
-        <div class="questions-container">
+        <div class="container">
           <dt><button class="font-1-m cor-12" aria-controls="soporte" aria-expanded="false">
             ¿Cómo hago para recibir ayuda y mantenerme al dia?
             </button>
@@ -687,9 +770,9 @@
         <!-- END QUESTION 2 -->
 
         <!-- 
-          MARK: #F3
+          MARK: # F3
         -->
-        <div class="questions-container">
+        <div class="container">
           <dt><button class="font-1-m cor-12" aria-controls="licencia" aria-expanded="false">
             ¿Cómo es el tema de las licencias?</button>
           </dt>
@@ -702,9 +785,9 @@
         <!-- END QUESTION 3 -->
 
         <!-- 
-          MARK: #F4
+          MARK: # F4
         -->
-        <div class="questions-container">
+        <div class="container">
           <dt><button class="font-1-m cor-12" aria-controls="suscripcion" aria-expanded="false">
             ¿Si cambio CPU o HDD del sistema por necesidad o error, como es la reactivación?</button>
           </dt>
@@ -716,9 +799,9 @@
         <!-- END QUESTION 4 -->
 
         <!-- 
-          MARK: #F5
+          MARK: # F5
         -->
-        <div class="questions-container">
+        <div class="container">
           <dt><button class="font-1-m cor-12" aria-controls="colaborar" aria-expanded="false">
             ¿De que forma puedo colaborar al desarrollo?</button>
           </dt>
@@ -730,9 +813,9 @@
         <!-- END QUESTION 5 -->
 
         <!-- 
-          MARK: #F6
+          MARK: # F6
         -->
-        <div class="questions-container">
+        <div class="container">
           <dt><button class="font-1-m cor-12" aria-controls="pago" aria-expanded="false">
             ¿Cómo puedo efectuar el pago?</button>
           </dt>
@@ -743,9 +826,9 @@
         <!-- END QUESTION 6 -->
 
         <!-- 
-          MARK: #F7
+          MARK: # F7
         -->
-        <div class="questions-container">
+        <div class="container">
           <dt><button class="font-1-m cor-12" aria-controls="idioma" aria-expanded="false">
             ¿En qué idioma se encuentra?</button>
           </dt>
@@ -868,7 +951,7 @@
 
       <div class="testimonial-container">
         <!-- 
-          MARK: #T1 
+          MARK: # T1 
         -->
         <div class="card border-left-comment hidden">
             <div class="interactive"></div>
@@ -920,7 +1003,7 @@
         <!-- End T1 -->
 
         <!-- 
-          MARK: #T2 
+          MARK: # T2 
         -->
         <div class="card border-left-comment hidden">
             <div class="interactive"></div>
@@ -968,7 +1051,7 @@
         <!-- End T2 -->
 
         <!-- 
-          MARK: #T3 
+          MARK: # T3 
         -->
         <div class="card border-left-comment hidden">
             <div class="interactive"></div>
@@ -1021,7 +1104,7 @@
         <!-- End T3 -->
 
         <!-- 
-          MARK: #T4 
+          MARK: # T4 
         -->
         <div class="card border-left-comment hidden">
             <div class="interactive"></div>
@@ -1228,7 +1311,7 @@
                 <li><a target="_blank" href="https://www.repairlap.com/">RepairLap</a></li>
                 <li><a target="_blank" href="https://сервискомп-анна.рф/forums/">SK</a></li>
                 <li><a target="_blank" href=https://www.elvikom.pl">Elvikom</a></li>
-                </br>
+                <br>
               </ul>
             </nav>
           </div>
@@ -1242,7 +1325,7 @@
                 <li><a target="_blank" href="./terms.html">Términos</a></li>
                 <li><a target="_blank" href="./privacy.html">Política</a></li>
                 <li><a target="_blank" href="./docs/Guia de usuario - Center AIO Pro 2.1 (ES).pdf">Guía Usuario</a></li>
-                </br>
+                <br>
               </ul>
             </nav>
           </div>

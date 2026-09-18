@@ -1,7 +1,16 @@
 /*======================================================================================
                                   MARK: FAQ
 ======================================================================================*/
-const questions = document.querySelectorAll(".questions button");
+function suscription(plan) {
+  const text = `Hola he accedido a la web oficial de Center AIO Pro y estoy interesado en el plan ${plan}.`;
+  const url = decodeURI(`tg://resolve?domain=doctorbios&text=${text}`);
+  return window.open(url,'_blank');
+}
+
+/*======================================================================================
+                                  MARK: FAQ
+======================================================================================*/
+const questions = document.querySelectorAll(".documentation button");
 
 function activarQuestion(event) {
   const question = event.currentTarget;

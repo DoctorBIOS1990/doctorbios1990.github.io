@@ -129,7 +129,10 @@
   padding-left: 40px;
   padding-right: 40px;
 }
-/* DOCUMENTATION */
+
+/* 
+  MARK: DOCS 
+*/
 .documentation dl > div {
   padding: 20px;
   border-radius: 20px;

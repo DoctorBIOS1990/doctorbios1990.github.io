@@ -2,14 +2,17 @@
   padding: 100px 0;
   background: url(./../../img/price-back.svg) center center no-repeat;
   background-size: contain;
+  place-content: center;
+}
+.price{
+  justify-items: center;
 }
 .price-container {
   display: grid;
   flex-wrap: wrap;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0;
-  justify-items: center;
-  max-width: 700px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
 }
 .price-contenido {
   padding-top: 20px;
@@ -34,12 +37,18 @@
 .price-card:hover {
   box-shadow: 0px 0px 20px var(--color-primary-software);
 }
+.free {
+  border: var(--color-success) solid 1px;
+  border-top: var(--color-success) 5px solid;
+}
+.free:hover {
+  box-shadow: 0px 0px 20px var(--color-success);
+}
 .gold {
   border: var(--color-gold) solid 1px;
-  background-color: rgba(240, 240, 240, 0.1);
   border-top: var(--color-gold) 5px solid;
+  background-color: rgba(240, 240, 240, 0.1);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.16);
-  transition: all 0.3s ease-in-out;
 }
 .gold:hover {
   box-shadow: 0px 0px 20px var(--color-gold);
@@ -57,8 +66,12 @@
   background: linear-gradient(180deg, var(--color-primary-software), var(--color-secondary-software));
   font-size: x-large;
 }
+.icon-free {
+  box-shadow: 0 1px 5px var(--color-success);
+  background: linear-gradient(180deg, var(--color-success), var(--color-secondary-software));
+}
 .icon-gold {
-  box-shadow: 0px 1px 5px var(--color-gold);
+  box-shadow: 0 1px 5px var(--color-gold);
   background: var(--color-gradient-gold);
 }
 .price h2 {
@@ -165,11 +178,19 @@
   place-content: center;
   transition: all .3s ease-in-out;
   border: var(--cor-9) 1px solid;
+  align-items: center;
 }
 .submit-price:hover{
   background: var(--color-primary-software);
   box-shadow: 0px 0px 10px var(--color-shadow);
   cursor: pointer;
+}
+.btn-free{
+  background: var(--color-success);
+}
+.btn-free:hover{
+  background: #3c8f5a; 
+  box-shadow: 0px 0px 10px var(--color-success);
 }
 .btn-gold{
   background: #be8837;
@@ -178,13 +199,37 @@
   background: #9a6e2c;
   box-shadow: 0px 0px 10px var(--color-gold);
 }
-
+.free .keyword{
+  border: 1px solid var(--color-success);
+}
+.free .keyword:hover{
+  box-shadow: 0px 0px 10px var(--color-success);
+}
+.gold .keyword{
+  border: 1px solid var(--color-gold);
+}
+.gold .keyword:hover{
+  box-shadow: 0px 0px 10px var(--color-gold);
+}
+.price-card button{
+  width: 100%;
+}
 /*=======================================================================================
                                       MARK: RESPONSIB
 =======================================================================================*/
-@media (width < 650px) {
-  .price-container{
+@media (width < 1170px) {
+  .price-container {
+    gap: 10px;
+  }
+}
+@media (max-width : 1140px) {
+  .price-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media (max-width : 545px) {
+  .price-container {
     grid-template-columns: 1fr;
-    gap: 40px;
   }
 }

@@ -18,7 +18,7 @@
   --card-cima-bg: #1a1a1a;
   --color-primary-software: rgb(36, 97, 97);
   --color-secondary-software: rgb(25, 63, 63);
-  --color-success: #22c55e;
+  --color-success: #4db774;
   --color-shadow: #5bd5d5;
   --color-danger: red;
   --color-gold: #ffb84d;
@@ -79,4 +79,10 @@
 }
 .cor-16 {
   color: var(--color-gold);
+}
+.cor-17 {
+  color: var(--color-shadow);
+}
+.cor-18 {
+  color: var(--color-danger);
 }

@@ -1,6 +1,5 @@
-.questions {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.questions-bg{
+  padding: 100px 0;
 }
 .documentation h2 {
   margin-bottom: 60px;
@@ -10,10 +9,6 @@
                                       MARK: RESPONSIB
 =======================================================================================*/
 @media (max-width: 800px) {
-  .questions {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
   .questions h2, .privacy h2 {
     margin-bottom: 40px;
   }

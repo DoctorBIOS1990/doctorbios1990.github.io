@@ -1,10 +1,13 @@
 .questions-bg{
   padding: 100px 0;
+  justify-items: center;
 }
 .documentation h2 {
   margin-bottom: 60px;
 }
-
+.faq-container{
+  max-width: 50rem;
+}
 /*=======================================================================================
                                       MARK: RESPONSIB
 =======================================================================================*/

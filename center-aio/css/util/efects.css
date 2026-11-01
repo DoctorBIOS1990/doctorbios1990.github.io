@@ -24,14 +24,6 @@
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(rgba(36, 97, 97, 0.35) 0px 0px 32px);
 }
-.gradient-gold {
-    background: linear-gradient(135deg, 
-        rgb(190, 136, 55) 0%, 
-        rgb(255, 184, 77) 48%,
-        rgb(255, 215, 0) 100%) text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(rgba(36, 97, 97, 0.35) 0px 0px 32px);
-}
 .difuminar {
   width: 100%;
   display: flex;
@@ -109,6 +101,9 @@
     opacity: 1;
   }
 }
+@keyframes spin{
+    to{transform: rotate(360deg)}
+}
 
 .card-3d {
     transform-style: preserve-3d;
@@ -155,15 +150,10 @@
     transform: rotate(-6deg);
     z-index: 3;
 }
-.stack:hover .c1{
-    transform: translate(-90px, -30px) rotate(-18deg);
-}
-.stack:hover .c2{
-    transform: translate(0px, -55px) rotate(0deg);
-}
-.stack:hover .c3{
-    transform: translate(90px, -30px) rotate(18deg);
-}
+.stack:hover .c1{transform: translate(-90px, -30px) rotate(-18deg)}
+.stack:hover .c2{transform: translate(0px, -55px) rotate(0deg)}
+.stack:hover .c3{transform: translate(90px, -30px) rotate(18deg)}
+
 .screen {
   display: grid;
   place-items: center;
@@ -174,8 +164,7 @@
     linear-gradient(180deg, rgba(32, 32, 32, .08) 0 50%, rgba(32, 32, 32, .65) 100%),
     linear-gradient(180deg, var(--ink) 0%, var(--purple) 100%);
 }
-.screen::before,
-.screen::after {
+.screen::before,.screen::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -195,18 +184,60 @@
 }
 .malla::after{
   transform: none;
-  mask-image: linear-gradient(
-    to bottom,
-    white 50%,
-    transparent,
-    white 85%,
-    transparent
-  );
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    transparent,
-    white 50%,
-    white 85%,
-    transparent
-  );
+  mask-image: linear-gradient(to bottom,white 50%,transparent,white 85%,transparent);
+  -webkit-mask-image: linear-gradient(to bottom,transparent,white 50%,white 85%,transparent);
 }
+/* Vista Isometrica*/
+.isometrico {
+  transform: rotate(-45deg) skew(20deg, 10deg) scale(0.8);
+  transform-origin: center center;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  width: 40%;
+  height: 50%;
+  position: absolute;
+  aspect-ratio: 16/8;
+}
+.isometrico .mockup{
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;  
+  padding: 3px;
+  z-index: 1;
+  border-radius: 14px;
+  object-fit: cover;
+}
+.shadow{
+  box-shadow: -50px 50px 20px rgba(0, 0, 0, 0.5);
+}
+/* Caja con border Smooth*/
+.box{
+  width: 508px;
+  height: 370px;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  display:flex;
+  align-items: center;
+  justify-content: center;   
+}
+.box::before{
+  content:'';
+  position: absolute;
+  inset: -50%;
+  background: conic-gradient(from 0deg,transparent 0%,#00e5ff 15%,transparent 30%);
+  animation: spin 3s linear infinite;   
+}
+.box::after{
+    content:'';
+    position: absolute;
+    inset: 3px;
+    background:#111;
+    border-radius: 14px;
+}
+
+@media(max-width: 1254px){.box{width: 458px;height: 320px;}}
+@media(max-width: 1149px){.box{width: 438px;height: 300px;}}
+@media(max-width: 1168px){.box{width: 408px;height: 270px;}}

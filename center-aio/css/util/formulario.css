@@ -1,12 +1,6 @@
-.form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
- .form-contenido {
+.form-contenido {
   max-width: 600px;
 }
-
 .form input {
   color: var(--cor-10);
 }
@@ -19,6 +13,7 @@
 }
 .form .col-2 {
   grid-column: span 2;
+  padding: 10px 0 ;
 }
 .form input[type="text"],
 .form input[type="email"],
@@ -51,26 +46,6 @@ textarea{
   resize: none;
   color: var(--cor-10);
 }
-.submit-telegram{
-  display: flex;
-  padding: 12px 28px;
-  border-radius: 5px;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  color:#fff;
-  background: #1f78a5;
-  width: 100%;
-  text-align: center;
-  align-content: center;
-  place-content: center;
-  transition: all .3s ease-in-out;
-  border: var(--cor-9) 1px solid;
-}
-.submit-telegram:hover{
-  background: #144c68;
-  box-shadow: 0px 0px 10px var(--color-shadow);
-  cursor: pointer;
-}
 .dangerInput{
   border: var(--color-danger) 2px solid !important;
 }
@@ -81,18 +56,6 @@ textarea{
 /*=======================================================================================
                                       MARK: RESPONSIB
 =======================================================================================*/
-@media (max-width: 800px) {
-  .contacto-formulario {
-    grid-template-columns: 1fr;
-    padding-top: 10px;
-  }
-  .form {
-    grid-template-columns: 1fr;
-  }
-  .form .col-2 {
-    grid-column: 1;
-  }
-}
 @media (max-width: 1042px) {
   .form-contenido h2 {
     font-size: 2.8rem ;

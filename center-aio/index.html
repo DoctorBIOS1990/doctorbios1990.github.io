@@ -232,7 +232,7 @@
         </div>
 
         <ul class="hero-botones">
-          <li><a class="boton-oscuro font-1-m hidden" href="./docs/Guia de usuario - Center AIO Pro 2.1 (ES).pdf" download title="📄 Descargar la guia de usuario en PDF">Descarga PDF</a></li>
+          <li><a class="boton-oscuro font-1-m hidden" href="./docs/Guia de usuario - Center AIO Pro 2.1 (ES).pdf" download title="📄 Descargar la guia de usuario en PDF">Manual PDF</a></li>
           <li><a class="boton font-1-m hidden" href="#price">Adquirir</a></li>
         </ul>
 
@@ -244,18 +244,19 @@
       </div>
 
       <div class="home-imagen">
+        <!-- Mockup -->
+        <div class="box isometrico shadow">
+            <div class="interactive"></div>
+            <img class="mockup" src="./img/screenshots/0.webp" alt="" draggable="false" fetchpriority="high" decoding="async">  
+        </div>
+
+        <!--
         <div class="stack">
             <div class="card-baraja c1"></div>
             <div class="card-baraja c2"></div>
             <div class="card-baraja c3"></div>
-        </div>  
+        </div>-->
       </div> 
-
-      <div class="layer">
-          <picture>
-            <img src="./img/screenshots/0.webp" draggable="false" alt="" fetchpriority="high" decoding="async"/>
-          </picture>
-      </div>  
     </div>
   </section>
 
@@ -1158,7 +1159,7 @@
       </h2>
 
       <ul class="cta-botones">
-        <li><a class="boton-oscuro font-1-m hidden" href="./docs/Guia de usuario - Center AIO Pro 2.1 (ES).pdf" download title="📄 Descargar la guia de usuario en PDF">Descarga PDF</a></li>
+        <li><a class="boton-oscuro font-1-m hidden" href="./docs/Guia de usuario - Center AIO Pro 2.1 (ES).pdf" download title="📄 Descargar la guia de usuario en PDF">Manual PDF</a></li>
         <li><a class="boton font-1-m hidden" href="#price">Adquirir</a></li>
       </ul> 
     </div>
@@ -1166,7 +1167,7 @@
 </div>
 
   <!--
-    MARK: FORM
+    MARK: CONTACT
   -->
   <section class="formulario-bg screen" id="contacto">
 
@@ -1182,25 +1183,38 @@
         <p class="font-2-l cor-10">
           Si quieres colaborar con alguna idea o sugerencia puedes contactarme por aqui:
         </p>
-        
-        <div class="form">
-          <div>
-              <label for="name" id="label_name">Nombre: [*]</label>
-              <input id="name" type="text" placeholder="Su nombre" autocomplete="off">
+        <form class="contact-form" id="contact-form">
+          <div class="form">
+            <div class="col-2 name-email-container">
+                <label for="name" id="label_name">Nombre: [*]
+                    <input id="name" type="text" name="fullname" placeholder="Su nombre" autocomplete="off" data-fs-field required>
+                </label> 
+
+                <label for="email" id="label_email">Email: [*]
+                    <input id="email" type="email" name="email" placeholder="contato@email.com" autocomplete="off" data-fs-field required>
+                </label>
+            </div>
+            
+            <div class="col-2">
+                <label for="message" id="label_message">Mensaje: [*]
+                    <textarea id="message" name="message" rows="10" placeholder="Cuerpo del mensaje" data-fs-field required></textarea>
+                </label>
+            </div>
+ 
+            <button id="submit" class="submit col-2"><i class="fa fa-envelope"></i> Send email</button>
+            
+            <!--Status form Request -->
+            <div id="message_success" class="contact__message" data-fs-success>
+              <i class="fa-check-circle"></i><strong>Enviado!</strong> Gracias por su mensaje
+              <button id="dismiss_success">X</button>
+            </div>
+            <div id="message_error" class="contact__message" data-fs-error>
+              <i class="fa fa-exclamation-triangle"></i><strong>Oops!</strong> Ha ocurrido un problema.
+              <button id="dismiss_error">X</button>
+            </div>
+            
           </div>
-          <div>
-              <label for="email" id="label_email">Email: [*]</label>
-              <input id="email" type="email" placeholder="contato@email.com" autocomplete="off">
-          </div>
-          <div class="col-2">
-              <label for="message" id="label_message">Mensaje: [*]</label>
-              <textarea id="message" rows="10" placeholder="Cuerpo del mensaje"></textarea>
-          </div>
-          <button class="submit-telegram col-2">
-            <img src="./img/icons/social/telegram.svg" alt=""> Send to Telegram
-          </button>
-          
-        </div>
+        </form>
       </div>
     </div>
   </div>
@@ -1358,11 +1372,6 @@
 
   </footer>
 
-  <!-- ScrollUP -->
-  <a href="#home" class="scrollup">
-    <img src="./img/icons/seta-back.svg" aria-label="Ir al Inicio" title="Ir al inicio">
-  </a>
-
   <!-- Modal para imagen maximizada -->
   <div id="modal" class="modal hidden" >
     <button id="modal-close" class="modal-close cor-11" aria-label="Cerrar">
@@ -1377,10 +1386,24 @@
   </div>
   <!--  End Modal -->
 
+  <!-- Contact form Request -->
+  <script>
+    window.formspree =
+      window.formspree ||
+      function () {
+        (formspree.q = formspree.q || []).push(arguments);
+      };
+    formspree("initForm", {
+      formElement: "#contact-form",
+      formId: "xdeegqda",
+    });
+  </script>
+
   <script defer src="./js/global.js"></script>
   <script defer src="./js/card-hover.js"></script>
   <script defer src="./js/index.js"></script>
   <script defer src="./js/counterup.js"></script>
+  <script defer src="./js/request.js"></script>
 
 </body>
 </html>

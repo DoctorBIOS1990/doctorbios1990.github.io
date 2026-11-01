@@ -219,6 +219,25 @@ trackExplora.addEventListener('touchcancel', finishDrag);
 /*======================================================================================
                                   MARK: CONTACT
 ======================================================================================*/
+const message_success = document.getElementById('message_success');
+const message_error = document.getElementById('message_error');
+const btn_success =  document.getElementById('dismiss_success');
+const btn_error =  document.getElementById('dismiss_error');
+const btn_submit = document.getElementById('submit');
+
+setHide = (element) => element.setAttribute('style','display: none');
+removeHide = (element) => element.setAttribute('style','display: block');
+check = (element) => {return element.getAttribute('style') == 'display: none'};
+
+btn_submit.addEventListener('click', () =>{
+  if (check(message_success)) removeHide(message_success);
+  if (check(message_error)) removeHide(message_error);
+});
+
+btn_success.addEventListener('click', () => setHide(message_success));
+btn_error.addEventListener('click', () => setHide(message_error));
+
+/*
 // Telegram
 const submit_telegram = document.querySelector('.submit-telegram');
 
@@ -309,7 +328,7 @@ applyDangerInput = (input) => input.classList.add('dangerInput');
 
 // Apply Danger laberls
 applyDangerLabel = (label) => label.classList.add('dangerLabel');
-
+*/
 /*======================================================================================
                                   MARK: MODAL
 ======================================================================================*/

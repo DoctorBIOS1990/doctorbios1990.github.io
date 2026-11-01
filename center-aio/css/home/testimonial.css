@@ -76,3 +76,9 @@
     right: 40px;
   }
 }
+@media (width < 378px) {
+  .cta-botones {
+    gap: 20px;
+  }
+}
+

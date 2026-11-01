@@ -73,6 +73,11 @@
 /*=======================================================================================
                                       MARK: RESPONSIB
 =======================================================================================*/
+@media (width < 995px) {
+  .features-container {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
 @media (max-width: 800px) {
   .features-bg {
     padding-top: 40px;
@@ -90,7 +95,7 @@
     padding: 60px 0;
   }
 }
-@media (width < 587px) {
+@media (width < 722px) {
   .features-container {
     grid-template-columns: 1fr;
   }

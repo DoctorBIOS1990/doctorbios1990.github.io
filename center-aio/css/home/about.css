@@ -47,4 +47,7 @@
     grid-template-columns: 1fr;
     margin-bottom: 60px;
   }
+  .sobre-contenido{
+    text-align: center;
+  }
 }
